@@ -23,3 +23,10 @@
 - A/B/C, 복합 규칙·우선순위·거절/억제·수동 도움·직원 호출 시뮬레이션, 6개 재현 시나리오, 최소 이벤트를 구현.
 - 규칙·시나리오와 한계를 RULES.md에 문서화. 실제 브라우저에서 C 옵션 실패 화면·도움·이벤트를 함께 확인.
 - 실제 테스트: 5 files / 40 tests, TypeScript 및 production build 통과. 다음: 이벤트 저장·KPI·사업성 계산.
+
+## Phase 3 | 2026-10-24
+- Phase 2 700ed34aba2bed4ce2bdc4e0bfa2deab3f6dfffe 자동 업로드와 main 불변 확인 후 착수.
+- 익명 localStorage·초기화·실패 fallback, 출처/모드별 KPI와 합성 비교, 13개 변수 손익·4개 가정·음수 보류 판단 구현.
+- KPI 정의/분모/한계, 고객·공급사 BM, 실증·제휴·한계 문서 작성. 실제 성과와 가정, 대리지표와 사업성 오개입률의 차이를 명시.
+- 실제 검증: 9 files / 82 tests, TypeScript·production build, 브라우저 대시보드/직접 비용 변경/음수 시나리오 확인.
+- 다음: 실제 화면·PDF·README·GitHub Pages 가능 여부 검사와 최종 QA.
