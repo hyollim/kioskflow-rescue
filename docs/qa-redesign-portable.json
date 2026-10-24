@@ -1,0 +1,19 @@
+{
+  "url": "http://127.0.0.1:4174/deliverables/kioskflow-rescue-standalone.html",
+  "title": "KioskFlow Rescue | 무인솔루션 운영 플랫폼",
+  "negative": {
+    "recommendation": "도입 보류",
+    "net": "-2,217,000원"
+  },
+  "basePreviouslyObserved": "+628,000원",
+  "fontLoaded": true,
+  "externalRuntimeResources": [],
+  "inlineScriptSha256": "ed3c11e5d599134694fbac6b60084132e92afcdebbb9082f299e3e42c3d86279",
+  "inlineCssSha256": "dc918fd4040644c6f084c7bd7bd98cfdc602dbf8ba485ea64e417a5c9dcbd516",
+  "fileDirectVerified": false,
+  "finalScriptBytesMatch": true,
+  "finalCssBytesMatch": true,
+  "standaloneSha256": "efe8860a8241a27fe8b016abea1a3e1bb03af862c3dcb29452839b4fc66cbec0",
+  "bytes": 3085939,
+  "fontLicensePresent": true
+}

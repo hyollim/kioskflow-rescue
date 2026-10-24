@@ -24,3 +24,6 @@ Aside Browser는 로컬 file URL 탐색 권한이 없어 직접 파일 열기는
 
 ## 원격 CI 검증
 9d11dc8의 Validate portfolio #1은 https://github.com/hyollim/kioskflow-rescue/actions/runs/40070606451 에서 Success(29초), test-and-build 및 정적 artifact 생성을 확인했다. Node20 action 경고는 최종 workflow에서 v5/Node24 및 ubuntu-24.04로 조정했다. CI 성공은 Pages 배포 성공과 다르다.
+
+## Premium Enterprise Minimal 리디자인 검증
+최종 13개 파일/103개 테스트와 production build, format 검사, 의존성 감사 0개를 확인했다. 단일 HTML은 JS/CSS/Pretendard/OFL을 내장한다. 별도 loopback origin의 HTTP 실행에서 기준/부정 손익 전환과 외부 runtime resource 0개를 확인했다. file:// 직접 실행과 공개 Pages 배포 성공은 주장하지 않는다. 비교 PDF·현재 제안서의 실제 화면과 디자인을 동기화했다. [상세](REDESIGN_REPORT.md)

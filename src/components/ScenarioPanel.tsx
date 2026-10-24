@@ -19,7 +19,8 @@ export default function ScenarioPanel({
   return (
     <details className="scenario-console">
       <summary>
-        <span className="scenario-symbol">↳</span> 빠른 데모 시나리오{" "}
+        {" "}
+        빠른 데모 시나리오{" "}
         <span className="scenario-tag">가상 신호 · 실제 UI 반영</span>
       </summary>
       <div className="scenario-content">

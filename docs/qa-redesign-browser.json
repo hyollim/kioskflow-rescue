@@ -1,0 +1,2357 @@
+{
+  "method": "Actual production app in same-origin CSS viewport harness; not physical-device, OS or screen-reader certification. Automated incomplete findings are not counted as passes. Supplemental computed RGB contrast covers text on flat backgrounds.",
+  "states": [
+    {
+      "name": "390-final-start",
+      "observedAt": "2026-10-24T13:09:43.729Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 1794
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 54,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 1,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 11,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-start-large",
+      "observedAt": "2026-10-24T11:57:06.973Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 1871
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 54,
+      "minTextPx": 15.75,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 1,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls and offscreen/screen-reader-only text. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-start",
+      "observedAt": "2026-10-24T13:09:44.774Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1331
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 66,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 1,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 11,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-A-menu",
+      "observedAt": "2026-10-24T13:10:37.343Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1580
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 110,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 12,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 14,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-A-menu",
+      "observedAt": "2026-10-24T13:10:36.171Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2488
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 93,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 12,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 13,
+      "coveredControls": [],
+      "behindStickyNavigation": [
+        {
+          "label": "빠른 데모 시나리오 가상 신호 · 실제 UI 반영",
+          "coveredBy": "DIV",
+          "behindStickyNavigation": true
+        }
+      ],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-A-options",
+      "observedAt": "2026-10-24T12:02:07.874Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1405
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 91,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 4.82,
+      "textContrastFailures": [],
+      "kioskButtonCount": 7,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 14,
+      "coveredControls": [],
+      "behindStickyNavigation": [
+        {
+          "label": "빠른 데모 시나리오 가상 신호 · 실제 UI 반영",
+          "coveredBy": "DIV",
+          "behindStickyNavigation": true
+        }
+      ],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-A-cart",
+      "observedAt": "2026-10-24T12:02:25.647Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1331
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 88,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 8,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 14,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-A-cart-edited",
+      "observedAt": "2026-10-24T12:03:15.377Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1331
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 89,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 8,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 15,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 1,
+            "firstDiagnostic": "Fix any of the following:\n  Element content contains only non-text characters"
+          }
+        ]
+      }
+    },
+    {
+      "name": "1440-final-A-review",
+      "observedAt": "2026-10-24T12:03:40.836Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1331
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 84,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.222,
+      "textContrastFailures": [],
+      "kioskButtonCount": 3,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-A-payment",
+      "observedAt": "2026-10-24T12:03:59.748Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1342
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 81,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 3,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 11,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 28,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-A-payment-ack-error",
+      "observedAt": "2026-10-24T12:04:52.670Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1407
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 82,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 3,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 28,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-A-complete",
+      "observedAt": "2026-10-24T12:05:00.494Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1331
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 77,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 1,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 8,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-dashboard-live",
+      "observedAt": "2026-10-24T12:06:00.878Z",
+      "heading": "운영 대시보드",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1876
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 284,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [
+        {
+          "label": "A/B/C 지표 표 가로 스크롤",
+          "clientWidth": 655,
+          "scrollWidth": 655,
+          "clientHeight": 204,
+          "scrollHeight": 204,
+          "keyboardFocusable": true
+        },
+        {
+          "label": "익명 이벤트 표 가로 스크롤",
+          "clientWidth": 1112,
+          "scrollWidth": 1112,
+          "clientHeight": 366,
+          "scrollHeight": 2175,
+          "keyboardFocusable": true
+        }
+      ],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 150,
+            "firstDiagnostic": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+          }
+        ]
+      }
+    },
+    {
+      "name": "1440-final-dashboard-synthetic",
+      "observedAt": "2026-10-24T13:12:19.623Z",
+      "heading": "운영 대시보드",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1876
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 282,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [
+        {
+          "label": "A/B/C 지표 표 가로 스크롤",
+          "clientWidth": 655,
+          "scrollWidth": 655,
+          "clientHeight": 204,
+          "scrollHeight": 204,
+          "keyboardFocusable": true
+        },
+        {
+          "label": "익명 이벤트 표 가로 스크롤",
+          "clientWidth": 1112,
+          "scrollWidth": 1112,
+          "clientHeight": 366,
+          "scrollHeight": 2175,
+          "keyboardFocusable": true
+        }
+      ],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 150,
+            "firstDiagnostic": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+          }
+        ]
+      }
+    },
+    {
+      "name": "768-final-dashboard-synthetic",
+      "observedAt": "2026-10-24T13:12:19.022Z",
+      "heading": "운영 대시보드",
+      "viewport": {
+        "width": 768,
+        "height": 900,
+        "documentWidth": 768,
+        "documentHeight": 2511
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 278,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [
+        {
+          "label": "A/B/C 지표 표 가로 스크롤",
+          "clientWidth": 672,
+          "scrollWidth": 672,
+          "clientHeight": 204,
+          "scrollHeight": 204,
+          "keyboardFocusable": true
+        },
+        {
+          "label": "익명 이벤트 표 가로 스크롤",
+          "clientWidth": 672,
+          "scrollWidth": 672,
+          "clientHeight": 366,
+          "scrollHeight": 2175,
+          "keyboardFocusable": true
+        }
+      ],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 150,
+            "firstDiagnostic": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+          }
+        ]
+      }
+    },
+    {
+      "name": "390-final-dashboard-synthetic",
+      "observedAt": "2026-10-24T13:12:18.418Z",
+      "heading": "운영 대시보드",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2873
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 274,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [
+        {
+          "label": "A/B/C 지표 표 가로 스크롤",
+          "clientWidth": 322,
+          "scrollWidth": 540,
+          "clientHeight": 198,
+          "scrollHeight": 198,
+          "keyboardFocusable": true
+        },
+        {
+          "label": "익명 이벤트 표 가로 스크롤",
+          "clientWidth": 322,
+          "scrollWidth": 640,
+          "clientHeight": 342,
+          "scrollHeight": 2115,
+          "keyboardFocusable": true
+        }
+      ],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 169,
+            "firstDiagnostic": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+          }
+        ]
+      }
+    },
+    {
+      "name": "390-final-dashboard-comparison-keyboard",
+      "observedAt": "2026-10-24T12:08:40.407Z",
+      "heading": "운영 대시보드",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2873
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 274,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [
+        {
+          "label": "A/B/C 지표 표 가로 스크롤",
+          "clientWidth": 322,
+          "scrollWidth": 540,
+          "clientHeight": 198,
+          "scrollHeight": 198,
+          "keyboardFocusable": true
+        },
+        {
+          "label": "익명 이벤트 표 가로 스크롤",
+          "clientWidth": 322,
+          "scrollWidth": 640,
+          "clientHeight": 342,
+          "scrollHeight": 2115,
+          "keyboardFocusable": true
+        }
+      ],
+      "fullyInViewportControlsChecked": 6,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 169,
+            "firstDiagnostic": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+          }
+        ]
+      }
+    },
+    {
+      "name": "390-final-dashboard-event-log-keyboard",
+      "observedAt": "2026-10-24T12:09:25.437Z",
+      "heading": "운영 대시보드",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2873
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 274,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [
+        {
+          "label": "A/B/C 지표 표 가로 스크롤",
+          "clientWidth": 322,
+          "scrollWidth": 540,
+          "clientHeight": 198,
+          "scrollHeight": 198,
+          "keyboardFocusable": true
+        },
+        {
+          "label": "익명 이벤트 표 가로 스크롤",
+          "clientWidth": 322,
+          "scrollWidth": 640,
+          "clientHeight": 342,
+          "scrollHeight": 2115,
+          "keyboardFocusable": true
+        }
+      ],
+      "fullyInViewportControlsChecked": 7,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 166,
+            "firstDiagnostic": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+          }
+        ]
+      }
+    },
+    {
+      "name": "390-final-dashboard-mode-C",
+      "observedAt": "2026-10-24T12:11:30.733Z",
+      "heading": "운영 대시보드",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2873
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 274,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [
+        {
+          "label": "A/B/C 지표 표 가로 스크롤",
+          "clientWidth": 322,
+          "scrollWidth": 540,
+          "clientHeight": 198,
+          "scrollHeight": 198,
+          "keyboardFocusable": true
+        },
+        {
+          "label": "익명 이벤트 표 가로 스크롤",
+          "clientWidth": 322,
+          "scrollWidth": 640,
+          "clientHeight": 342,
+          "scrollHeight": 2115,
+          "keyboardFocusable": true
+        }
+      ],
+      "fullyInViewportControlsChecked": 7,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 169,
+            "firstDiagnostic": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+          }
+        ]
+      }
+    },
+    {
+      "name": "390-final-business-base",
+      "observedAt": "2026-10-24T12:19:07.473Z",
+      "heading": "사업성 분석",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 3449
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 96,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 12,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 24,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-business-custom-negative",
+      "observedAt": "2026-10-24T12:19:14.575Z",
+      "heading": "사업성 분석",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 3424
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 96,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 15,
+      "coveredControls": [],
+      "behindStickyNavigation": [
+        {
+          "label": "10",
+          "coveredBy": "SECTION",
+          "behindStickyNavigation": true
+        }
+      ],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 24,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-business-keyboard-focus",
+      "observedAt": "2026-10-24T12:20:36.584Z",
+      "heading": "사업성 분석",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 3424
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 96,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 17,
+      "coveredControls": [],
+      "behindStickyNavigation": [
+        {
+          "label": "20",
+          "coveredBy": "SPAN",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "1500",
+          "coveredBy": "SECTION",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "8",
+          "coveredBy": "SECTION",
+          "behindStickyNavigation": true
+        }
+      ],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 24,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-business-result-jump",
+      "observedAt": "2026-10-24T12:21:03.465Z",
+      "heading": "사업성 분석",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 3424
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 96,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 8,
+      "coveredControls": [],
+      "behindStickyNavigation": [
+        {
+          "label": "100",
+          "coveredBy": "DIV",
+          "behindStickyNavigation": true
+        }
+      ],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 24,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "768-final-business-base",
+      "observedAt": "2026-10-24T12:23:06.298Z",
+      "heading": "사업성 분석",
+      "viewport": {
+        "width": 768,
+        "height": 900,
+        "documentWidth": 768,
+        "documentHeight": 3170
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 103,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 12,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 24,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-business-base",
+      "observedAt": "2026-10-24T12:23:59.208Z",
+      "heading": "사업성 분석",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1737
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 103,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 15,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 24,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-business-positive",
+      "observedAt": "2026-10-24T12:23:57.673Z",
+      "heading": "사업성 분석",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1737
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 103,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 15,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 24,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-business-conservative",
+      "observedAt": "2026-10-24T12:23:58.184Z",
+      "heading": "사업성 분석",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1737
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 103,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 15,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 24,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-business-negative",
+      "observedAt": "2026-10-24T12:23:58.720Z",
+      "heading": "사업성 분석",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1737
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 104,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 15,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 24,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-about",
+      "observedAt": "2026-10-24T12:24:38.131Z",
+      "heading": "프로젝트 소개",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1234
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 53,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 8,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 20,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "768-final-about",
+      "observedAt": "2026-10-24T12:24:38.711Z",
+      "heading": "프로젝트 소개",
+      "viewport": {
+        "width": 768,
+        "height": 900,
+        "documentWidth": 768,
+        "documentHeight": 1358
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 50,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 7,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 20,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-about",
+      "observedAt": "2026-10-24T12:24:39.226Z",
+      "heading": "프로젝트 소개",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2043
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 45,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 6,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 20,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "768-final-kiosk-start",
+      "observedAt": "2026-10-24T13:09:44.247Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 768,
+        "height": 900,
+        "documentWidth": 768,
+        "documentHeight": 1616
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 63,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 1,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "768-final-B-friction-no-auto",
+      "observedAt": "2026-10-24T12:27:27.849Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 768,
+        "height": 900,
+        "documentWidth": 768,
+        "documentHeight": 2279
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 104,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 4.82,
+      "textContrastFailures": [],
+      "kioskButtonCount": 8,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 16,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "768-final-B-manual-help",
+      "observedAt": "2026-10-24T12:27:37.173Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 768,
+        "height": 900,
+        "documentWidth": 768,
+        "documentHeight": 2593
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 108,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 4.82,
+      "textContrastFailures": [],
+      "kioskButtonCount": 10,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 16,
+      "coveredControls": [],
+      "behindStickyNavigation": [
+        {
+          "label": "빠른 데모 시나리오 가상 신호 · 실제 UI 반영",
+          "coveredBy": "DIV",
+          "behindStickyNavigation": true
+        }
+      ],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "768-final-B-staff-simulation",
+      "observedAt": "2026-10-24T12:28:15.142Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 768,
+        "height": 900,
+        "documentWidth": 768,
+        "documentHeight": 2608
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 108,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 4.82,
+      "textContrastFailures": [],
+      "kioskButtonCount": 9,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 14,
+      "coveredControls": [],
+      "behindStickyNavigation": [
+        {
+          "label": "01옵션 선택 실패",
+          "coveredBy": "SPAN",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "02동일 단계 왕복",
+          "coveredBy": "DIV",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "03오랜 대기 + 오류",
+          "coveredBy": "DIV",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "04정상 이용 · 오탐 억제",
+          "coveredBy": "SPAN",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "05도움 거부 후 완료",
+          "coveredBy": "BUTTON",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "06도움 수락 후 완료",
+          "coveredBy": "path",
+          "behindStickyNavigation": true
+        }
+      ],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "768-final-B-back-to-menu",
+      "observedAt": "2026-10-24T12:28:58.883Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 768,
+        "height": 900,
+        "documentWidth": 768,
+        "documentHeight": 2379
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 122,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 13,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 17,
+      "coveredControls": [],
+      "behindStickyNavigation": [
+        {
+          "label": "04정상 이용 · 오탐 억제",
+          "coveredBy": "SPAN",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "05도움 거부 후 완료",
+          "coveredBy": "DIV",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "06도움 수락 후 완료",
+          "coveredBy": "DIV",
+          "behindStickyNavigation": true
+        }
+      ],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "768-final-B-order-cancelled",
+      "observedAt": "2026-10-24T12:29:06.766Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 768,
+        "height": 900,
+        "documentWidth": 768,
+        "documentHeight": 1825
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 76,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 1,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 8,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "1440-final-C-options-offer",
+      "observedAt": "2026-10-24T13:31:25.183Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "documentWidth": 1440,
+        "documentHeight": 1944
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 113,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 4.82,
+      "textContrastFailures": [],
+      "kioskButtonCount": 10,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 11,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 28,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "768-final-C-options-offer",
+      "observedAt": "2026-10-24T13:31:24.602Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 768,
+        "height": 900,
+        "documentWidth": 768,
+        "documentHeight": 2503
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 110,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 4.82,
+      "textContrastFailures": [],
+      "kioskButtonCount": 10,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 16,
+      "coveredControls": [],
+      "behindStickyNavigation": [
+        {
+          "label": "01옵션 선택 실패",
+          "coveredBy": "SPAN",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "02동일 단계 왕복",
+          "coveredBy": "DIV",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "03오랜 대기 + 오류",
+          "coveredBy": "DIV",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "04정상 이용 · 오탐 억제",
+          "coveredBy": "SPAN",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "05도움 거부 후 완료",
+          "coveredBy": "BUTTON",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "06도움 수락 후 완료",
+          "coveredBy": "path",
+          "behindStickyNavigation": true
+        }
+      ],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 28,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-C-options-offer",
+      "observedAt": "2026-10-24T13:31:23.917Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2749
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 96,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 4.82,
+      "textContrastFailures": [],
+      "kioskButtonCount": 10,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 28,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-C-manual-decline",
+      "observedAt": "2026-10-24T12:35:06.036Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2567
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 92,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 4.82,
+      "textContrastFailures": [],
+      "kioskButtonCount": 8,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 28,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-C-manual-after-decline",
+      "observedAt": "2026-10-24T12:35:23.951Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2927
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 96,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 4.82,
+      "textContrastFailures": [],
+      "kioskButtonCount": 10,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 28,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-C-auto-off",
+      "observedAt": "2026-10-24T12:35:31.927Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2567
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 92,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 4.82,
+      "textContrastFailures": [],
+      "kioskButtonCount": 8,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 28,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-C-replay-with-auto-setting",
+      "observedAt": "2026-10-24T12:35:55.507Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2486
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 91,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 4.82,
+      "textContrastFailures": [],
+      "kioskButtonCount": 8,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 18,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 28,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-C-scenario-options",
+      "observedAt": "2026-10-24T12:38:31.731Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2749
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 96,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 4.82,
+      "textContrastFailures": [],
+      "kioskButtonCount": 10,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 18,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 28,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-C-scenario-back",
+      "observedAt": "2026-10-24T12:38:32.264Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 3109
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 114,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.222,
+      "textContrastFailures": [],
+      "kioskButtonCount": 15,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 18,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 28,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-C-scenario-idle",
+      "observedAt": "2026-10-24T12:38:32.797Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2749
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 96,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 4.82,
+      "textContrastFailures": [],
+      "kioskButtonCount": 10,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 18,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 28,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-C-scenario-normal",
+      "observedAt": "2026-10-24T12:38:33.290Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2847
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 109,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 13,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 18,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 28,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-C-scenario-decline",
+      "observedAt": "2026-10-24T12:38:34.183Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2306
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 74,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 1,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 9,
+      "coveredControls": [],
+      "behindStickyNavigation": [
+        {
+          "label": "05도움 거부 후 완료",
+          "coveredBy": "SPAN",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "06도움 수락 후 완료",
+          "coveredBy": "DIV",
+          "behindStickyNavigation": true
+        }
+      ],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-C-scenario-accept",
+      "observedAt": "2026-10-24T12:38:35.034Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2306
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 74,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 1,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 9,
+      "coveredControls": [],
+      "behindStickyNavigation": [
+        {
+          "label": "05도움 거부 후 완료",
+          "coveredBy": "SPAN",
+          "behindStickyNavigation": true
+        },
+        {
+          "label": "06도움 수락 후 완료",
+          "coveredBy": "DIV",
+          "behindStickyNavigation": true
+        }
+      ],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-C-manual-accept",
+      "observedAt": "2026-10-24T12:43:22.907Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2846
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 95,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 4.82,
+      "textContrastFailures": [],
+      "kioskButtonCount": 10,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 28,
+        "incomplete": []
+      }
+    },
+    {
+      "name": "390-final-dashboard-scenario-events",
+      "observedAt": "2026-10-24T12:44:41.529Z",
+      "heading": "운영 대시보드",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2872
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 274,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [
+        {
+          "label": "A/B/C 지표 표 가로 스크롤",
+          "clientWidth": 322,
+          "scrollWidth": 540,
+          "clientHeight": 198,
+          "scrollHeight": 198,
+          "keyboardFocusable": true
+        },
+        {
+          "label": "익명 이벤트 표 가로 스크롤",
+          "clientWidth": 322,
+          "scrollWidth": 640,
+          "clientHeight": 342,
+          "scrollHeight": 2115,
+          "keyboardFocusable": true
+        }
+      ],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 171,
+            "firstDiagnostic": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+          }
+        ]
+      }
+    },
+    {
+      "name": "390-final-reset-empty",
+      "observedAt": "2026-10-24T12:50:58.274Z",
+      "heading": "운영 대시보드",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2892
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 96,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [
+        {
+          "label": "A/B/C 지표 표 가로 스크롤",
+          "clientWidth": 322,
+          "scrollWidth": 540,
+          "clientHeight": 198,
+          "scrollHeight": 198,
+          "keyboardFocusable": true
+        },
+        {
+          "label": "익명 이벤트 표 가로 스크롤",
+          "clientWidth": 322,
+          "scrollWidth": 640,
+          "clientHeight": 127,
+          "scrollHeight": 127,
+          "keyboardFocusable": true
+        }
+      ],
+      "fullyInViewportControlsChecked": 10,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 4,
+            "firstDiagnostic": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+          }
+        ]
+      }
+    },
+    {
+      "name": "390-final-reset-confirmation",
+      "observedAt": "2026-10-24T12:51:43.046Z",
+      "heading": "운영 대시보드",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2718
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 4,
+      "minTextPx": 16,
+      "smallText": [],
+      "minTextContrast": 5.895,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 2,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": true,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 9,
+            "firstDiagnostic": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+          }
+        ]
+      }
+    },
+    {
+      "name": "390-final-reset-cleared",
+      "observedAt": "2026-10-24T12:54:19.788Z",
+      "heading": "운영 대시보드",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 390,
+        "documentHeight": 2892
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 96,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.499,
+      "textContrastFailures": [],
+      "kioskButtonCount": 0,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [
+        {
+          "label": "A/B/C 지표 표 가로 스크롤",
+          "clientWidth": 322,
+          "scrollWidth": 540,
+          "clientHeight": 198,
+          "scrollHeight": 198,
+          "keyboardFocusable": true
+        },
+        {
+          "label": "익명 이벤트 표 가로 스크롤",
+          "clientWidth": 322,
+          "scrollWidth": 640,
+          "clientHeight": 127,
+          "scrollHeight": 127,
+          "keyboardFocusable": true
+        }
+      ],
+      "fullyInViewportControlsChecked": 7,
+      "coveredControls": [],
+      "behindStickyNavigation": [],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 4,
+            "firstDiagnostic": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+          }
+        ]
+      }
+    },
+    {
+      "name": "768-final-A-menu",
+      "observedAt": "2026-10-24T13:10:36.752Z",
+      "heading": "지원 방식별 키오스크 체험",
+      "viewport": {
+        "width": 768,
+        "height": 900,
+        "documentWidth": 768,
+        "documentHeight": 2097
+      },
+      "fonts": {
+        "loaded": true,
+        "family": "\"Pretendard Variable\", Pretendard, \"Apple SD Gothic Neo\", \"Noto Sans KR\", system-ui, sans-serif"
+      },
+      "textElementsChecked": 107,
+      "minTextPx": 14,
+      "smallText": [],
+      "minTextContrast": 5.272,
+      "textContrastFailures": [],
+      "kioskButtonCount": 12,
+      "smallKioskButtons": [],
+      "numericInputClipping": [],
+      "tables": [],
+      "fullyInViewportControlsChecked": 14,
+      "coveredControls": [],
+      "behindStickyNavigation": [
+        {
+          "label": "빠른 데모 시나리오 가상 신호 · 실제 UI 반영",
+          "coveredBy": "BUTTON",
+          "behindStickyNavigation": true
+        }
+      ],
+      "activeDialogOnly": false,
+      "scope": "Current rendered state in same-origin iframe. Computed solid-color text contrast, fully in-viewport center hit tests, number input text width, kiosk button geometry; excludes disabled controls, closed disclosures and offscreen/screen-reader-only text; content scrolled behind persistent navigation is reported separately, and active modal checks are limited to that dialog. Not an accessibility certification or physical-device test.",
+      "accessibility": {
+        "version": "4.14.0",
+        "violations": [],
+        "passes": 26,
+        "incomplete": []
+      }
+    }
+  ]
+}

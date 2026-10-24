@@ -53,7 +53,7 @@ describe("working kiosk MVP", () => {
     expect(screen.getByRole("button", { name: /주문 검토/ })).toBeDisabled();
     await user.click(screen.getByRole("button", { name: "주문 종료" }));
     expect(
-      screen.getByRole("heading", { name: "잠시 쉬어도 괜찮아요." }),
+      screen.getByRole("heading", { name: "주문이 종료되었습니다." }),
     ).toBeInTheDocument();
   });
   it("preserves the order while viewing project information", async () => {
@@ -62,7 +62,7 @@ describe("working kiosk MVP", () => {
     await user.click(screen.getByRole("button", { name: /주문 시작하기/ }));
     await user.click(screen.getByRole("button", { name: "프로젝트 소개" }));
     expect(
-      screen.getByRole("heading", { name: /풀어야 할 현장 문제/ }),
+      screen.getByRole("heading", { name: "프로젝트 소개" }),
     ).toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: "키오스크 체험" }));
     expect(

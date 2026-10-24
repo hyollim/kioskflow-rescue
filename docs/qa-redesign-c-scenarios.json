@@ -1,0 +1,52 @@
+[
+  {
+    "key": "options",
+    "title": "취향에 맞게 골라 주세요.",
+    "autoOffer": true,
+    "sourceBadge": "데모 시나리오 · 가상 신호 / 대기 시간 가속",
+    "step": "2. 옵션 선택",
+    "passed": true
+  },
+  {
+    "key": "back",
+    "title": "어떤 한 잔이 좋으세요?",
+    "autoOffer": true,
+    "sourceBadge": "데모 시나리오 · 가상 신호 / 대기 시간 가속",
+    "step": "1. 메뉴 선택",
+    "passed": true
+  },
+  {
+    "key": "idle",
+    "title": "취향에 맞게 골라 주세요.",
+    "autoOffer": true,
+    "sourceBadge": "데모 시나리오 · 가상 신호 / 대기 시간 가속",
+    "step": "2. 옵션 선택",
+    "passed": true
+  },
+  {
+    "key": "normal",
+    "title": "어떤 한 잔이 좋으세요?",
+    "autoOffer": false,
+    "sourceBadge": "데모 시나리오 · 가상 신호 / 대기 시간 가속",
+    "step": "1. 메뉴 선택",
+    "passed": true
+  },
+  {
+    "key": "decline",
+    "title": "주문이 완료됐어요.",
+    "autoOffer": false,
+    "sourceBadge": "데모 시나리오 · 가상 신호 / 대기 시간 가속",
+    "step": "6. 주문 완료",
+    "receipt": "1개 메뉴4,800원",
+    "passed": true
+  },
+  {
+    "key": "accept",
+    "title": "주문이 완료됐어요.",
+    "autoOffer": false,
+    "sourceBadge": "데모 시나리오 · 가상 신호 / 대기 시간 가속",
+    "step": "6. 주문 완료",
+    "receipt": "1개 메뉴4,800원",
+    "passed": true
+  }
+]

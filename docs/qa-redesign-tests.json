@@ -1,0 +1,1384 @@
+{
+  "numTotalTestSuites": 26,
+  "numPassedTestSuites": 26,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 103,
+  "numPassedTests": 103,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1792848623576,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "working kiosk MVP"
+          ],
+          "fullName": "working kiosk MVP completes an order with required options, cart edits and explicit mock payment",
+          "status": "passed",
+          "title": "completes an order with required options, cart edits and explicit mock payment",
+          "duration": 1115.4878750000003,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "working kiosk MVP"
+          ],
+          "fullName": "working kiosk MVP prevents empty checkout and supports category and abandonment",
+          "status": "passed",
+          "title": "prevents empty checkout and supports category and abandonment",
+          "duration": 164.786791,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "working kiosk MVP"
+          ],
+          "fullName": "working kiosk MVP preserves the order while viewing project information",
+          "status": "passed",
+          "title": "preserves the order while viewing project information",
+          "duration": 173.9114999999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1792848624570,
+      "endTime": 1792848626023.9116,
+      "status": "passed",
+      "message": "",
+      "name": "src/App.test.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "analysis workspaces and persistence"
+          ],
+          "fullName": "analysis workspaces and persistence keeps live data empty and displays synthetic data only when selected",
+          "status": "passed",
+          "title": "keeps live data empty and displays synthetic data only when selected",
+          "duration": 427.571,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "analysis workspaces and persistence"
+          ],
+          "fullName": "analysis workspaces and persistence changes the recommendation from profitable pilot to negative hold",
+          "status": "passed",
+          "title": "changes the recommendation from profitable pilot to negative hold",
+          "duration": 235.09912499999996,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "analysis workspaces and persistence"
+          ],
+          "fullName": "analysis workspaces and persistence requires confirmation before clearing scoped logs and resets the order",
+          "status": "passed",
+          "title": "requires confirmation before clearing scoped logs and resets the order",
+          "duration": 259.4027080000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "analysis workspaces and persistence"
+          ],
+          "fullName": "analysis workspaces and persistence retains minimal events after a hook remount",
+          "status": "passed",
+          "title": "retains minimal events after a hook remount",
+          "duration": 1.5026670000002014,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "analysis workspaces and persistence"
+          ],
+          "fullName": "analysis workspaces and persistence falls back to memory when browser storage throws",
+          "status": "passed",
+          "title": "falls back to memory when browser storage throws",
+          "duration": 0.8040419999999813,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1792848624570,
+      "endTime": 1792848625493.804,
+      "status": "passed",
+      "message": "",
+      "name": "src/components/analysis-ui.test.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "final keyboard, scenario and readability regression"
+          ],
+          "fullName": "final keyboard, scenario and readability regression traps dialog focus in both directions, handles Escape and restores trigger",
+          "status": "passed",
+          "title": "traps dialog focus in both directions, handles Escape and restores trigger",
+          "duration": 422.70445900000004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "final keyboard, scenario and readability regression"
+          ],
+          "fullName": "final keyboard, scenario and readability regression supports Enter activation and native Space acknowledgement in the order path",
+          "status": "passed",
+          "title": "supports Enter activation and native Space acknowledgement in the order path",
+          "duration": 88.01212499999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "final keyboard, scenario and readability regression"
+          ],
+          "fullName": "final keyboard, scenario and readability regression replays 옵션 선택 실패 with matching final state",
+          "status": "passed",
+          "title": "replays 옵션 선택 실패 with matching final state",
+          "duration": 159.06829099999982,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "final keyboard, scenario and readability regression"
+          ],
+          "fullName": "final keyboard, scenario and readability regression replays 동일 단계 왕복 with matching final state",
+          "status": "passed",
+          "title": "replays 동일 단계 왕복 with matching final state",
+          "duration": 144.6182080000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "final keyboard, scenario and readability regression"
+          ],
+          "fullName": "final keyboard, scenario and readability regression replays 오랜 대기 + 오류 with matching final state",
+          "status": "passed",
+          "title": "replays 오랜 대기 + 오류 with matching final state",
+          "duration": 132.65445799999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "final keyboard, scenario and readability regression"
+          ],
+          "fullName": "final keyboard, scenario and readability regression replays 정상 이용 · 오탐 억제 with matching final state",
+          "status": "passed",
+          "title": "replays 정상 이용 · 오탐 억제 with matching final state",
+          "duration": 95.47266600000012,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "final keyboard, scenario and readability regression"
+          ],
+          "fullName": "final keyboard, scenario and readability regression replays 도움 거부 후 완료 with matching final state",
+          "status": "passed",
+          "title": "replays 도움 거부 후 완료 with matching final state",
+          "duration": 86.23279200000002,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "final keyboard, scenario and readability regression"
+          ],
+          "fullName": "final keyboard, scenario and readability regression replays 도움 수락 후 완료 with matching final state",
+          "status": "passed",
+          "title": "replays 도움 수락 후 완료 with matching final state",
+          "duration": 84.20383399999992,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "final keyboard, scenario and readability regression"
+          ],
+          "fullName": "final keyboard, scenario and readability regression provides labelled keyboard-focusable scrolling regions",
+          "status": "passed",
+          "title": "provides labelled keyboard-focusable scrolling regions",
+          "duration": 39.40025000000014,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "final keyboard, scenario and readability regression"
+          ],
+          "fullName": "final keyboard, scenario and readability regression enlarges text without changing the selected workspace",
+          "status": "passed",
+          "title": "enlarges text without changing the selected workspace",
+          "duration": 110.80774999999994,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1792848624572,
+      "endTime": 1792848625935.8079,
+      "status": "passed",
+      "message": "",
+      "name": "src/components/final-qa.test.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "redesigned workspace presentation and preserved interaction"
+          ],
+          "fullName": "redesigned workspace presentation and preserved interaction uses concise page headings and keeps one current navigation item",
+          "status": "passed",
+          "title": "uses concise page headings and keeps one current navigation item",
+          "duration": 439.592167,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "redesigned workspace presentation and preserved interaction"
+          ],
+          "fullName": "redesigned workspace presentation and preserved interaction keeps experiment controls outside the cafe and retains manual B help",
+          "status": "passed",
+          "title": "keeps experiment controls outside the cafe and retains manual B help",
+          "duration": 173.64695800000004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "redesigned workspace presentation and preserved interaction"
+          ],
+          "fullName": "redesigned workspace presentation and preserved interaction keeps scenario provenance outside the cafe but the actual help and progress inside",
+          "status": "passed",
+          "title": "keeps scenario provenance outside the cafe but the actual help and progress inside",
+          "duration": 212.2766670000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "redesigned workspace presentation and preserved interaction"
+          ],
+          "fullName": "redesigned workspace presentation and preserved interaction groups support usage and intervention outcomes without changing synthetic KPIs",
+          "status": "passed",
+          "title": "groups support usage and intervention outcomes without changing synthetic KPIs",
+          "duration": 101.24591599999985,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "redesigned workspace presentation and preserved interaction"
+          ],
+          "fullName": "redesigned workspace presentation and preserved interaction updates the compact financial summary from base profit to negative hold",
+          "status": "passed",
+          "title": "updates the compact financial summary from base profit to negative hold",
+          "duration": 74.3620840000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "redesigned workspace presentation and preserved interaction"
+          ],
+          "fullName": "redesigned workspace presentation and preserved interaction announces a concise financial result instead of a whole repeated ledger",
+          "status": "passed",
+          "title": "announces a concise financial result instead of a whole repeated ledger",
+          "duration": 70.05004200000008,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1792848624573,
+      "endTime": 1792848625644.05,
+      "status": "passed",
+      "message": "",
+      "name": "src/components/redesign-ui.test.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "A/B/C UI and deterministic scenarios"
+          ],
+          "fullName": "A/B/C UI and deterministic scenarios replays option friction in C and permits rejection",
+          "status": "passed",
+          "title": "replays option friction in C and permits rejection",
+          "duration": 564.1975830000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "A/B/C UI and deterministic scenarios"
+          ],
+          "fullName": "A/B/C UI and deterministic scenarios B exposes only manual help and staff simulation",
+          "status": "passed",
+          "title": "B exposes only manual help and staff simulation",
+          "duration": 226.35854199999994,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "A/B/C UI and deterministic scenarios"
+          ],
+          "fullName": "A/B/C UI and deterministic scenarios normal idle alone does not trigger C and completed scenarios show the real terminal screen",
+          "status": "passed",
+          "title": "normal idle alone does not trigger C and completed scenarios show the real terminal screen",
+          "duration": 171.14645799999994,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1792848624570,
+      "endTime": 1792848625531.1465,
+      "status": "passed",
+      "message": "",
+      "name": "src/components/rescue-ui.test.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "real timer scheduling under a deterministic clock"
+          ],
+          "fullName": "real timer scheduling under a deterministic clock offers only after idle threshold and enforces maximum two offers",
+          "status": "passed",
+          "title": "offers only after idle threshold and enforces maximum two offers",
+          "duration": 10.367792000000009,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1792848624429,
+      "endTime": 1792848624439.3677,
+      "status": "passed",
+      "message": "",
+      "name": "src/hooks/idle-clock.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "event and help lifecycle"
+          ],
+          "fullName": "event and help lifecycle logs one offer, acceptance, simulated staff request and terminal completion",
+          "status": "passed",
+          "title": "logs one offer, acceptance, simulated staff request and terminal completion",
+          "duration": 7.903415999999993,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "event and help lifecycle"
+          ],
+          "fullName": "event and help lifecycle suppresses automatic reoffers for the session after rejection, not manual help",
+          "status": "passed",
+          "title": "suppresses automatic reoffers for the session after rejection, not manual help",
+          "duration": 1.5757079999999632,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "event and help lifecycle"
+          ],
+          "fullName": "event and help lifecycle B has on-demand help but A has none",
+          "status": "passed",
+          "title": "B has on-demand help but A has none",
+          "duration": 1.9111659999999802,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "event and help lifecycle"
+          ],
+          "fullName": "event and help lifecycle marks explicit reset as abandonment and isolates scenario sessions",
+          "status": "passed",
+          "title": "marks explicit reset as abandonment and isolates scenario sessions",
+          "duration": 0.6833750000000691,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "event and help lifecycle"
+          ],
+          "fullName": "event and help lifecycle does not offer when disabled",
+          "status": "passed",
+          "title": "does not offer when disabled",
+          "duration": 0.45754199999998946,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1792848624429,
+      "endTime": 1792848624441.6833,
+      "status": "passed",
+      "message": "",
+      "name": "src/hooks/useRescue.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "KPI definitions and complete synthetic fixture"
+          ],
+          "fullName": "KPI definitions and complete synthetic fixture uses null, not zero performance, for empty denominators",
+          "status": "passed",
+          "title": "uses null, not zero performance, for empty denominators",
+          "duration": 2.3198750000000246,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "KPI definitions and complete synthetic fixture"
+          ],
+          "fullName": "KPI definitions and complete synthetic fixture keeps open sessions out of terminal rates and durations",
+          "status": "passed",
+          "title": "keeps open sessions out of terminal rates and durations",
+          "duration": 0.9930410000000052,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "KPI definitions and complete synthetic fixture"
+          ],
+          "fullName": "KPI definitions and complete synthetic fixture exactly calculates all 12 predetermined sessions without causal claims",
+          "status": "passed",
+          "title": "exactly calculates all 12 predetermined sessions without causal claims",
+          "duration": 1.2852080000000115,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "KPI definitions and complete synthetic fixture"
+          ],
+          "fullName": "KPI definitions and complete synthetic fixture has the same completion rate in A/B/C synthetic cohorts",
+          "status": "passed",
+          "title": "has the same completion rate in A/B/C synthetic cohorts",
+          "duration": 0.4804579999999987,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "KPI definitions and complete synthetic fixture"
+          ],
+          "fullName": "KPI definitions and complete synthetic fixture deduplicates event IDs and ignores orphan events",
+          "status": "passed",
+          "title": "deduplicates event IDs and ignores orphan events",
+          "duration": 0.4663749999999709,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "KPI definitions and complete synthetic fixture"
+          ],
+          "fullName": "KPI definitions and complete synthetic fixture only uses the first terminal event, even at equal timestamps",
+          "status": "passed",
+          "title": "only uses the first terminal event, even at equal timestamps",
+          "duration": 1.1887079999999628,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "KPI definitions and complete synthetic fixture"
+          ],
+          "fullName": "KPI definitions and complete synthetic fixture counts only the first response of a valid offered ID",
+          "status": "passed",
+          "title": "counts only the first response of a valid offered ID",
+          "duration": 0.39808299999998553,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "KPI definitions and complete synthetic fixture"
+          ],
+          "fullName": "KPI definitions and complete synthetic fixture does not count manual help after rejection as self-completion proxy",
+          "status": "passed",
+          "title": "does not count manual help after rejection as self-completion proxy",
+          "duration": 0.31587500000000546,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "KPI definitions and complete synthetic fixture"
+          ],
+          "fullName": "KPI definitions and complete synthetic fixture includes exactly 30 seconds but excludes slower completion in the proxy",
+          "status": "passed",
+          "title": "includes exactly 30 seconds but excludes slower completion in the proxy",
+          "duration": 0.16470899999995936,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "KPI definitions and complete synthetic fixture"
+          ],
+          "fullName": "KPI definitions and complete synthetic fixture does not use unfinished dismissed sessions in proxy denominator",
+          "status": "passed",
+          "title": "does not use unfinished dismissed sessions in proxy denominator",
+          "duration": 0.10929100000004155,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "KPI definitions and complete synthetic fixture"
+          ],
+          "fullName": "KPI definitions and complete synthetic fixture ignores cross-mode/source corruption within a session",
+          "status": "passed",
+          "title": "ignores cross-mode/source corruption within a session",
+          "duration": 0.07075000000003229,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1792848624886,
+      "endTime": 1792848624894.1094,
+      "status": "passed",
+      "message": "",
+      "name": "src/domain/analytics.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "financial cross-checks across assumptions"
+          ],
+          "fullName": "financial cross-checks across assumptions is monotonic in recovery share with fixed costs",
+          "status": "passed",
+          "title": "is monotonic in recovery share with fixed costs",
+          "duration": 4.200582999999995,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "financial cross-checks across assumptions"
+          ],
+          "fullName": "financial cross-checks across assumptions charges fee per device but total opex only once",
+          "status": "passed",
+          "title": "charges fee per device but total opex only once",
+          "duration": 0.21120799999999917,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "financial cross-checks across assumptions"
+          ],
+          "fullName": "financial cross-checks across assumptions does not multiply total upfront integration cost by devices",
+          "status": "passed",
+          "title": "does not multiply total upfront integration cost by devices",
+          "duration": 0.1392500000000041,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "financial cross-checks across assumptions"
+          ],
+          "fullName": "financial cross-checks across assumptions preserves before-after equality across the bounded rate grid",
+          "status": "passed",
+          "title": "preserves before-after equality across the bounded rate grid",
+          "duration": 0.32191599999998743,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1792848624955,
+      "endTime": 1792848624960.322,
+      "status": "passed",
+      "message": "",
+      "name": "src/domain/business-properties.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month matches hand-calculated base values without double-counting setup",
+          "status": "passed",
+          "title": "matches hand-calculated base values without double-counting setup",
+          "duration": 0.9869999999999663,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month returns appropriate decisions for all scenario presets",
+          "status": "passed",
+          "title": "returns appropriate decisions for all scenario presets",
+          "duration": 0.3333749999999327,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month keeps fixed costs when one device has zero attempts",
+          "status": "passed",
+          "title": "keeps fixed costs when one device has zero attempts",
+          "duration": 0.14720900000008896,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month treats zero upfront cost as undefined ROI and zero payback if profitable",
+          "status": "passed",
+          "title": "treats zero upfront cost as undefined ROI and zero payback if profitable",
+          "duration": 0.28950000000008913,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month does not divide by zero for break-even net benefit",
+          "status": "passed",
+          "title": "does not divide by zero for break-even net benefit",
+          "duration": 0.25520800000003874,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month applies risk gates at 10% and 20%, with hold taking priority",
+          "status": "passed",
+          "title": "applies risk gates at 10% and 20%, with hold taking priority",
+          "duration": 0.22683300000005602,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month does not count setup as a monthly cost",
+          "status": "passed",
+          "title": "does not count setup as a monthly cost",
+          "duration": 0.20495800000003328,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month cannot recover more transactions than baseline abandoned",
+          "status": "passed",
+          "title": "cannot recover more transactions than baseline abandoned",
+          "duration": 0.1908329999999978,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month rejects invalid inputs {\"devices\":0}",
+          "status": "passed",
+          "title": "rejects invalid inputs {\"devices\":0}",
+          "duration": 0.8638750000000073,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month rejects invalid inputs {\"devices\":1.5}",
+          "status": "passed",
+          "title": "rejects invalid inputs {\"devices\":1.5}",
+          "duration": 0.296291999999994,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month rejects invalid inputs {\"attemptsPerDevice\":-1}",
+          "status": "passed",
+          "title": "rejects invalid inputs {\"attemptsPerDevice\":-1}",
+          "duration": 12.868542000000048,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month rejects invalid inputs {\"recoveryShare\":1.01}",
+          "status": "passed",
+          "title": "rejects invalid inputs {\"recoveryShare\":1.01}",
+          "duration": 0.166541000000052,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month rejects invalid inputs {\"staffReduction\":1.1}",
+          "status": "passed",
+          "title": "rejects invalid inputs {\"staffReduction\":1.1}",
+          "duration": 0.0887079999999969,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month rejects invalid inputs {\"falseRate\":-0.1}",
+          "status": "passed",
+          "title": "rejects invalid inputs {\"falseRate\":-0.1}",
+          "duration": 0.08537499999999909,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month rejects invalid inputs {\"setupTotal\":-1}",
+          "status": "passed",
+          "title": "rejects invalid inputs {\"setupTotal\":-1}",
+          "duration": 0.07829100000003564,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month rejects invalid inputs {\"marginPerOrder\":null}",
+          "status": "passed",
+          "title": "rejects invalid inputs {\"marginPerOrder\":null}",
+          "duration": 0.08150000000000546,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "customer incremental business model in KRW per month"
+          ],
+          "fullName": "customer incremental business model in KRW per month rejects invalid inputs {\"monthlyFee\":null}",
+          "status": "passed",
+          "title": "rejects invalid inputs {\"monthlyFee\":null}",
+          "duration": 0.08883400000001984,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1792848624393,
+      "endTime": 1792848624410.0889,
+      "status": "passed",
+      "message": "",
+      "name": "src/domain/business.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "order pricing and safe inputs"
+          ],
+          "fullName": "order pricing and safe inputs prices regular and large in KRW without rounding drift",
+          "status": "passed",
+          "title": "prices regular and large in KRW without rounding drift",
+          "duration": 1.0281670000000531,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "order pricing and safe inputs"
+          ],
+          "fullName": "order pricing and safe inputs handles empty cart",
+          "status": "passed",
+          "title": "handles empty cart",
+          "duration": 0.10833399999989979,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "order pricing and safe inputs"
+          ],
+          "fullName": "order pricing and safe inputs rejects unknown products and invalid sizes",
+          "status": "passed",
+          "title": "rejects unknown products and invalid sizes",
+          "duration": 0.39387499999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "order pricing and safe inputs"
+          ],
+          "fullName": "order pricing and safe inputs rejects invalid quantity 0",
+          "status": "passed",
+          "title": "rejects invalid quantity 0",
+          "duration": 0.11054200000000947,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "order pricing and safe inputs"
+          ],
+          "fullName": "order pricing and safe inputs rejects invalid quantity -1",
+          "status": "passed",
+          "title": "rejects invalid quantity -1",
+          "duration": 0.08950000000004366,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "order pricing and safe inputs"
+          ],
+          "fullName": "order pricing and safe inputs rejects invalid quantity 10",
+          "status": "passed",
+          "title": "rejects invalid quantity 10",
+          "duration": 0.06700000000000728,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "order pricing and safe inputs"
+          ],
+          "fullName": "order pricing and safe inputs rejects invalid quantity NaN",
+          "status": "passed",
+          "title": "rejects invalid quantity NaN",
+          "duration": 0.07362499999999272,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "order pricing and safe inputs"
+          ],
+          "fullName": "order pricing and safe inputs rejects invalid quantity 1.5",
+          "status": "passed",
+          "title": "rejects invalid quantity 1.5",
+          "duration": 0.06287499999996271,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "order pricing and safe inputs"
+          ],
+          "fullName": "order pricing and safe inputs validates required temperature",
+          "status": "passed",
+          "title": "validates required temperature",
+          "duration": 0.1409999999999627,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "order pricing and safe inputs"
+          ],
+          "fullName": "order pricing and safe inputs updates quantities immutably and bounds them",
+          "status": "passed",
+          "title": "updates quantities immutably and bounds them",
+          "duration": 0.2436249999999518,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "order pricing and safe inputs"
+          ],
+          "fullName": "order pricing and safe inputs formats won",
+          "status": "passed",
+          "title": "formats won",
+          "duration": 8.848208999999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1792848624392,
+      "endTime": 1792848624402.8481,
+      "status": "passed",
+      "message": "",
+      "name": "src/domain/order.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy requires context beyond idle alone",
+          "status": "passed",
+          "title": "requires context beyond idle alone",
+          "duration": 1.367541000000017,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy does not intervene on one ordinary action or brief pause",
+          "status": "passed",
+          "title": "does not intervene on one ordinary action or brief pause",
+          "duration": 0.2976669999999899,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy offers at repeated error + idle threshold",
+          "status": "passed",
+          "title": "offers at repeated error + idle threshold",
+          "duration": 0.14925000000005184,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy handles repeated back navigation and idle",
+          "status": "passed",
+          "title": "handles repeated back navigation and idle",
+          "duration": 0.0830829999999878,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy handles edits plus an error",
+          "status": "passed",
+          "title": "handles edits plus an error",
+          "duration": 0.08758399999999256,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy handles long idle only with previous friction",
+          "status": "passed",
+          "title": "handles long idle only with previous friction",
+          "duration": 0.06537500000001728,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy never automatically intervenes in A",
+          "status": "passed",
+          "title": "never automatically intervenes in A",
+          "duration": 0.07762500000001182,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy never automatically intervenes in B",
+          "status": "passed",
+          "title": "never automatically intervenes in B",
+          "duration": 0.05283299999996416,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy respects suppression {\"enabled\":false}",
+          "status": "passed",
+          "title": "respects suppression {\"enabled\":false}",
+          "duration": 0.07570800000002009,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy respects suppression {\"dismissed\":true}",
+          "status": "passed",
+          "title": "respects suppression {\"dismissed\":true}",
+          "duration": 0.07629200000002356,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy respects suppression {\"activeHelp\":true}",
+          "status": "passed",
+          "title": "respects suppression {\"activeHelp\":true}",
+          "duration": 0.051375000000007276,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy respects suppression {\"offerCount\":2}",
+          "status": "passed",
+          "title": "respects suppression {\"offerCount\":2}",
+          "duration": 0.04820799999998826,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy respects suppression {\"step\":\"start\"}",
+          "status": "passed",
+          "title": "respects suppression {\"step\":\"start\"}",
+          "duration": 0.05054199999995035,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy respects suppression {\"step\":\"complete\"}",
+          "status": "passed",
+          "title": "respects suppression {\"step\":\"complete\"}",
+          "duration": 0.04070799999999508,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy respects suppression {\"lastOfferedAt\":70001}",
+          "status": "passed",
+          "title": "respects suppression {\"lastOfferedAt\":70001}",
+          "duration": 0.05033299999996643,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy allows the cooldown boundary and max one earlier offer",
+          "status": "passed",
+          "title": "allows the cooldown boundary and max one earlier offer",
+          "duration": 0.055749999999989086,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy ignores stale, future and other-screen signals",
+          "status": "passed",
+          "title": "ignores stale, future and other-screen signals",
+          "duration": 0.07349999999996726,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "explainable contextual support policy"
+          ],
+          "fullName": "explainable contextual support policy prioritizes repeated errors before long idle",
+          "status": "passed",
+          "title": "prioritizes repeated errors before long idle",
+          "duration": 0.055625000000020464,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1792848624927,
+      "endTime": 1792848624930.0735,
+      "status": "passed",
+      "message": "",
+      "name": "src/domain/rules.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "minimal browser storage"
+          ],
+          "fullName": "minimal browser storage safely ignores malformed data null",
+          "status": "passed",
+          "title": "safely ignores malformed data null",
+          "duration": 2.0549589999999966,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "minimal browser storage"
+          ],
+          "fullName": "minimal browser storage safely ignores malformed data bad",
+          "status": "passed",
+          "title": "safely ignores malformed data bad",
+          "duration": 0.30954200000002174,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "minimal browser storage"
+          ],
+          "fullName": "minimal browser storage safely ignores malformed data {}",
+          "status": "passed",
+          "title": "safely ignores malformed data {}",
+          "duration": 0.2384590000000344,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "minimal browser storage"
+          ],
+          "fullName": "minimal browser storage safely ignores malformed data [1,null]",
+          "status": "passed",
+          "title": "safely ignores malformed data [1,null]",
+          "duration": 0.26037500000001046,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "minimal browser storage"
+          ],
+          "fullName": "minimal browser storage reconstructs allowed fields only and strips arbitrary PII fields",
+          "status": "passed",
+          "title": "reconstructs allowed fields only and strips arbitrary PII fields",
+          "duration": 0.4271250000000464,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "minimal browser storage"
+          ],
+          "fullName": "minimal browser storage rejects prototype event names and invalid timestamps",
+          "status": "passed",
+          "title": "rejects prototype event names and invalid timestamps",
+          "duration": 0.2396669999999972,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "minimal browser storage"
+          ],
+          "fullName": "minimal browser storage drops oldest whole sessions before truncating a single giant session",
+          "status": "passed",
+          "title": "drops oldest whole sessions before truncating a single giant session",
+          "duration": 0.299541999999974,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "minimal browser storage"
+          ],
+          "fullName": "minimal browser storage preserves the session start when trimming a giant session",
+          "status": "passed",
+          "title": "preserves the session start when trimming a giant session",
+          "duration": 1.004792000000009,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        },
+        {
+          "ancestorTitles": [
+            "minimal browser storage"
+          ],
+          "fullName": "minimal browser storage deduplicates IDs and validates cap",
+          "status": "passed",
+          "title": "deduplicates IDs and validates cap",
+          "duration": 1.1803329999999619,
+          "failureMessages": [],
+          "meta": {},
+          "tags": []
+        }
+      ],
+      "startTime": 1792848624912,
+      "endTime": 1792848624918.1804,
+      "status": "passed",
+      "message": "",
+      "name": "src/domain/storage.test.ts"
+    }
+  ]
+}

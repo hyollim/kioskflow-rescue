@@ -1,0 +1,46 @@
+{
+  "origin": "http://127.0.0.1:4186",
+  "initialEvents": "현재 필터 0개 · 최근 30개 표시",
+  "selectedSource": "실제 체험 로그",
+  "emptyState": true,
+  "seededEvents": "현재 필터 2개 · 최근 30개 표시",
+  "dialogInitialFocus": "취소",
+  "focusChecks": [
+    {
+      "key": "Shift+Tab",
+      "expected": "초기화 확인",
+      "actual": "초기화 확인",
+      "passed": true
+    },
+    {
+      "key": "Tab",
+      "expected": "취소",
+      "actual": "취소",
+      "passed": true
+    }
+  ],
+  "escape": {
+    "dialogClosed": true,
+    "focus": "체험 데이터 초기화",
+    "eventCount": "현재 필터 2개 · 최근 30개 표시"
+  },
+  "afterClear": {
+    "eventCount": "현재 필터 0개 · 최근 30개 표시",
+    "emptyState": true,
+    "dialogClosed": true
+  },
+  "syntheticAfterClear": {
+    "primary": [
+      "75.0%",
+      "25.0%",
+      "95.6초",
+      "12건"
+    ],
+    "eventCount": "현재 필터 99개 · 최근 30개 표시"
+  },
+  "orderReset": {
+    "heading": "주문을 시작해 주세요",
+    "journeyAbsent": true,
+    "recentEmpty": true
+  }
+}

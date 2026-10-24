@@ -111,17 +111,8 @@ export default function Dashboard({
     <div className="dashboard-page">
       <div className="analysis-intro">
         <div>
-          <span className="eyebrow">02 / OPERATIONS INTELLIGENCE</span>
-          <h1>
-            완료 너머의 경험을,
-            <br />
-            <span>데이터로 살펴봅니다.</span>
-          </h1>
-          <p>
-            어디서 막혔고, 어떤 도움을 선택했는지.
-            <br />
-            최소한의 이벤트로 운영 가설을 검증합니다.
-          </p>
+          <h1>운영 대시보드</h1>
+          <p>주문 완료와 이탈, 지원 이용 및 입력 오류를 출처별로 확인합니다.</p>
         </div>
         <div className="analysis-badge">
           <Icon name="shield" size={17} />{" "}
@@ -200,7 +191,7 @@ export default function Dashboard({
       {k.started === 0 && (
         <div className="empty-analytics">
           <Icon name="chart" size={28} />
-          <h2>아직 이 출처의 세션이 없어요.</h2>
+          <h2>표시할 세션이 없습니다.</h2>
           <p>
             키오스크를 체험하거나 ‘가상 비교 데이터’로 계산 방식을 확인해
             보세요.
@@ -210,53 +201,65 @@ export default function Dashboard({
       )}
       <div className="section-heading">
         <div>
-          <span className="eyebrow">SUPPORT PERFORMANCE</span>
-          <h2>도움이 필요한 만큼, 적절했을까요?</h2>
+          <h2>지원 이용 및 개입 결과</h2>
         </div>
         <span className="subtle">모든 비율은 현재 출처·모드 필터 기준</span>
       </div>
-      <div className="metrics-secondary">
-        <Metric
-          label="도움 요청률"
-          value={formatRate(k.helpRequestRate)}
-          note={`직접 요청한 세션 / 시작 ${k.started}세션`}
-        />
-        <Metric
-          label="자동 개입 발생률"
-          value={formatRate(k.autoOfferRate)}
-          note={`자동 제안 경험 세션 / 시작 ${k.started}세션`}
-        />
-        <Metric
-          label="제안 수락률"
-          value={formatRate(k.acceptanceRate)}
-          note={`수락 ${k.accepted} / 제안 ${k.offers}회`}
-        />
-        <Metric
-          label="제안 거부율"
-          value={formatRate(k.dismissalRate)}
-          note={`거절 ${k.dismissed} / 제안 ${k.offers}회 · 미응답 ${k.unanswered}`}
-        />
-        <Metric
-          label="도움 이후 완료율"
-          value={formatRate(k.afterHelpCompletionRate)}
-          note={`도움 이용 후 완료 ${k.helpCompleted} / 종료 ${k.helpEnded}세션`}
-        />
-        <Metric
-          label="불필요 개입 대리지표"
-          value={formatRate(k.unnecessaryProxyRate)}
-          note={`거절 후 30초 내 자력 완료 ${k.proxy} / 종료된 거절 제안 ${k.proxyEligible}회`}
-        />
-        <Metric
-          label="직원 지원 요청률"
-          value={formatRate(k.staffRequestRate)}
-          note={`직원 호출 체험 세션 / 시작 ${k.started}세션`}
-        />
+      <div className="support-analysis">
+        <section className="support-group support-volume">
+          <div className="support-group-heading">
+            <h3>지원 이용</h3>
+          </div>
+          <div className="support-group-metrics">
+            <Metric
+              label="도움 요청률"
+              value={formatRate(k.helpRequestRate)}
+              note={`직접 요청한 세션 / 시작 ${k.started}세션`}
+            />
+            <Metric
+              label="자동 개입 발생률"
+              value={formatRate(k.autoOfferRate)}
+              note={`자동 제안 경험 세션 / 시작 ${k.started}세션`}
+            />
+            <Metric
+              label="직원 지원 요청률"
+              value={formatRate(k.staffRequestRate)}
+              note={`직원 호출 체험 세션 / 시작 ${k.started}세션`}
+            />
+          </div>
+        </section>
+        <section className="support-group support-outcomes">
+          <div className="support-group-heading">
+            <h3>개입 결과</h3>
+          </div>
+          <div className="support-group-metrics">
+            <Metric
+              label="제안 수락률"
+              value={formatRate(k.acceptanceRate)}
+              note={`수락 ${k.accepted} / 제안 ${k.offers}회`}
+            />
+            <Metric
+              label="제안 거부율"
+              value={formatRate(k.dismissalRate)}
+              note={`거절 ${k.dismissed} / 제안 ${k.offers}회 · 미응답 ${k.unanswered}`}
+            />
+            <Metric
+              label="도움 이후 완료율"
+              value={formatRate(k.afterHelpCompletionRate)}
+              note={`도움 이용 후 완료 ${k.helpCompleted} / 종료 ${k.helpEnded}세션`}
+            />
+            <Metric
+              label="불필요 개입 대리지표"
+              value={formatRate(k.unnecessaryProxyRate)}
+              note={`거절 후 30초 내 자력 완료 ${k.proxy} / 종료된 거절 제안 ${k.proxyEligible}회`}
+            />
+          </div>
+        </section>
       </div>
       <div className="dashboard-grid">
         <section className="panel">
           <div className="panel-heading">
             <div>
-              <span className="eyebrow">OBSERVATIONAL COMPARISON</span>
               <h2>A / B / C 관측 비교</h2>
             </div>
             <span className="small-chip">
@@ -275,7 +278,7 @@ export default function Dashboard({
             role="region"
             aria-label="A/B/C 지표 표 가로 스크롤"
           >
-            <table>
+            <table className="comparison-table">
               <caption className="sr-only">출처별 A/B/C 관측 지표 비교</caption>
               <thead>
                 <tr>
@@ -317,7 +320,6 @@ export default function Dashboard({
           </div>
         </section>
         <section className="panel friction-panel">
-          <span className="eyebrow">FRICTION SIGNALS</span>
           <h2>입력 오류가 발생한 화면</h2>
           <p className="panel-note">
             오류 횟수이며 실제 어려움의 확정값은 아닙니다.
@@ -336,7 +338,7 @@ export default function Dashboard({
             ))
           )}
           <div className="interpretation">
-            <Icon name="spark" size={18} />
+            <Icon name="info" size={18} />
             <p>
               ‘거절 후 빠른 완료’는 오탐의 대리지표일 뿐입니다. 실제 불필요
               여부는 현장 관찰·사용자 확인이 필요합니다.
@@ -347,8 +349,7 @@ export default function Dashboard({
       <section className="panel event-panel">
         <div className="panel-heading">
           <div>
-            <span className="eyebrow">ANONYMOUS EVENT STREAM</span>
-            <h2>최소 정보로 남긴 조작 맥락</h2>
+            <h2>익명 이벤트 로그</h2>
           </div>
           <span className="small-chip">
             현재 필터 {filtered.length}개 · 최근 30개 표시
@@ -360,7 +361,7 @@ export default function Dashboard({
           role="region"
           aria-label="익명 이벤트 표 가로 스크롤"
         >
-          <table>
+          <table className="event-table">
             <caption className="sr-only">익명 세션 이벤트 로그</caption>
             <thead>
               <tr>

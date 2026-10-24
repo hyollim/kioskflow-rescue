@@ -1,0 +1,49 @@
+{
+  "baselineCommit": "ef9f94cc14e3454cbc9b86631eb52c2b2cd5199a",
+  "domainAndHooksByteDiff": "none",
+  "dependencyManifestDiff": "none",
+  "checks": [
+    {
+      "file": "src/components/Kiosk.tsx",
+      "part": "go()",
+      "unchanged": true,
+      "normalizedSha256": "835f26046bffad4ff48777caa9bb8ae876e2847737600093b3afa0f46b29ce7f"
+    },
+    {
+      "file": "src/components/Kiosk.tsx",
+      "part": "reset()",
+      "unchanged": true,
+      "normalizedSha256": "5401a6d64abab6456f6bf11bfb664dbfe75fc6c9074aefc6f3c1e514579a5d2f"
+    },
+    {
+      "file": "src/components/Kiosk.tsx",
+      "part": "choose()",
+      "unchanged": true,
+      "normalizedSha256": "552f24919b792355145b848b2b56b5ef99088df24cb48afbbcded2c54924aa70"
+    },
+    {
+      "file": "src/components/Kiosk.tsx",
+      "part": "add()",
+      "unchanged": true,
+      "normalizedSha256": "0ad2910026aeb6596d6943ff69319bd84824e9a10d1ce9366542be2756f6a274"
+    },
+    {
+      "file": "src/components/Kiosk.tsx",
+      "part": "runScenario()",
+      "unchanged": true,
+      "normalizedSha256": "d8588ec9c9437b16159a613aeb13f5588d85827c6299f5f833d2137330072149"
+    },
+    {
+      "file": "src/components/Business.tsx",
+      "part": "Business all pre-render calculations/state/effects",
+      "unchanged": true,
+      "normalizedSha256": "e098f7a1e2289d5f5bd2499f7f2eecde59c180154aca0ffc8379d63b3c10d7c6"
+    },
+    {
+      "file": "src/components/Dashboard.tsx",
+      "part": "Dashboard all pre-render calculations/state/effects",
+      "unchanged": true,
+      "normalizedSha256": "432dad6856ae7c0f71eb5ecde4747fa6bd6fd1212be189c5d36301fcfd6bff55"
+    }
+  ]
+}

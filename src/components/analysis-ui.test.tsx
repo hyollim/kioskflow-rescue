@@ -11,9 +11,7 @@ describe("analysis workspaces and persistence", () => {
     const u = userEvent.setup();
     render(<App />);
     await u.click(screen.getByRole("button", { name: "운영 대시보드" }));
-    expect(
-      screen.getByText("아직 이 출처의 세션이 없어요."),
-    ).toBeInTheDocument();
+    expect(screen.getByText("표시할 세션이 없습니다.")).toBeInTheDocument();
     await u.click(screen.getByRole("button", { name: "가상 비교 데이터" }));
     expect(screen.getByText(/사전 정의한 12개 합성 세션/)).toBeInTheDocument();
     expect(screen.getAllByText("75.0%")).toHaveLength(4);
@@ -49,9 +47,7 @@ describe("analysis workspaces and persistence", () => {
     await u.click(screen.getByRole("button", { name: "체험 데이터 초기화" }));
     const dialog = screen.getByRole("alertdialog");
     await u.click(within(dialog).getByRole("button", { name: "초기화 확인" }));
-    expect(
-      screen.getByText("아직 이 출처의 세션이 없어요."),
-    ).toBeInTheDocument();
+    expect(screen.getByText("표시할 세션이 없습니다.")).toBeInTheDocument();
     await u.click(screen.getByRole("button", { name: "키오스크 체험" }));
     expect(
       screen.getByRole("button", { name: "주문 시작하기" }),

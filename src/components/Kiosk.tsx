@@ -246,436 +246,439 @@ export default function Kiosk({
     );
   }
   return (
-    <div className="kiosk" aria-label="모의 주문 키오스크">
-      <header className="kiosk-top">
-        <span className="coffee-brand">
-          <span className="coffee-mark">f.</span> FLOW COFFEE
-        </span>
-        <span className="device-badge">{mode} 모드 · 모의 매장</span>
-      </header>
-      {step !== "start" && (
-        <ol className="journey" aria-label="주문 진행 단계">
-          {journey.map((s, i) => (
-            <li
-              key={s}
-              className={
-                s === step ? "current" : journey.indexOf(step) > i ? "done" : ""
-              }
-              aria-current={s === step ? "step" : undefined}
-            >
-              <span>
-                {journey.indexOf(step) > i ? (
-                  <Icon name="check" size={13} />
-                ) : (
-                  i + 1
-                )}
-              </span>
-              <small>{stepNames[s]}</small>
-            </li>
-          ))}
-        </ol>
-      )}
-      <div
-        className="kiosk-content"
-        onPointerDown={rescue.touch}
-        onKeyDown={rescue.touch}
-      >
+    <div className="kiosk-session-wrap">
+      <div className="kiosk-runtime">
+        <span>고객용 주문 화면 · {mode} 방식</span>
         {rescue.source === "scenario" && (
-          <div className="source-badge">
+          <span className="source-badge">
             데모 시나리오 · 가상 신호 / 대기 시간 가속
-          </div>
-        )}
-        {step !== "start" && step !== "complete" && mode !== "A" && (
-          <div className="help-toolbar">
-            <button onClick={rescue.request}>
-              <Icon name="spark" size={16} /> 도움 요청
-            </button>
-            {mode === "C" && (
-              <label>
-                <input
-                  type="checkbox"
-                  checked={rescue.enabled}
-                  onChange={(e) => rescue.setEnabled(e.target.checked)}
-                />{" "}
-                자동 도움 {rescue.enabled ? "켜짐" : "꺼짐"}
-              </label>
-            )}
-          </div>
-        )}
-        {rescue.dismissed && step !== "complete" && (
-          <p className="suppression-note">
-            이 주문에서는 자동 제안을 멈췄어요. 도움은 직접 요청할 수 있어요.
-          </p>
-        )}
-        <HelpPanel rescue={rescue} step={step} />
-        {step === "start" ? (
-          <div className="welcome">
-            <span className="eyebrow">GOOD COFFEE, YOUR WAY.</span>
-            <h2 ref={title}>
-              {abandoned ? (
-                "잠시 쉬어도 괜찮아요."
-              ) : (
-                <>
-                  당신의 속도로,
-                  <br />
-                  좋아하는 한 잔.
-                </>
-              )}
-            </h2>
-            <p>
-              {abandoned
-                ? "이전 주문은 종료됐어요. 언제든 새로 시작할 수 있어요."
-                : "갓 내린 커피와 함께하는 작은 여유.\n천천히 골라 주세요."}
-            </p>
-            <div className="welcome-art">
-              <span className="orbit orbit-one" />
-              <span className="orbit orbit-two" />
-              <DrinkArt product={products[1]} large />
-              <span className="art-caption">BREWED FOR YOUR EVERYDAY</span>
-            </div>
-            <button className="primary wide" onClick={() => go("menu")}>
-              주문 시작하기 <Icon name="arrow" />
-            </button>
-            <div className="privacy-line">
-              <Icon name="shield" size={15} /> 실제 결제 없는 안전한 체험입니다.
-            </div>
-          </div>
-        ) : (
-          <>
-            <div className="step-title">
-              <span className="eyebrow">
-                {String(journey.indexOf(step) + 1).padStart(2, "0")} / 06
-              </span>
-              <h2 ref={title} tabIndex={-1}>
-                {step === "menu"
-                  ? "어떤 한 잔이 좋으세요?"
-                  : step === "options"
-                    ? "취향에 맞게 골라 주세요."
-                    : step === "cart"
-                      ? "고른 메뉴를 확인해요."
-                      : step === "review"
-                        ? "주문 전, 한 번 더 확인해요."
-                        : step === "payment"
-                          ? "마지막으로, 모의 결제."
-                          : "주문이 완료됐어요."}
-              </h2>
-              <p>
-                {step === "menu"
-                  ? "마음에 드는 메뉴를 선택해 주세요."
-                  : step === "options"
-                    ? "온도는 필수, 크기는 원하는 대로 선택해요."
-                    : step === "cart"
-                      ? "수량과 옵션을 수정할 수 있어요."
-                      : step === "review"
-                        ? "결제 전에 메뉴와 금액을 확인해 주세요."
-                        : step === "payment"
-                          ? "카드번호나 개인정보는 입력하지 않아요."
-                          : "실제 결제나 매장 주문은 발생하지 않았습니다."}
-              </p>
-            </div>
-            {step === "menu" && (
-              <>
-                <div
-                  className="categories"
-                  role="group"
-                  aria-label="메뉴 카테고리"
-                >
-                  {["전체", "커피", "논커피", "티 & 에이드"].map((c) => (
-                    <button
-                      key={c}
-                      aria-pressed={category === c}
-                      className={category === c ? "selected" : ""}
-                      onClick={() => setCategory(c)}
-                    >
-                      {c}
-                    </button>
-                  ))}
-                </div>
-                <div className="product-grid">
-                  {products
-                    .filter(
-                      (p) => category === "전체" || p.category === category,
-                    )
-                    .map((p) => (
-                      <button
-                        className="product-card"
-                        key={p.id}
-                        onClick={() => choose(p.id)}
-                        aria-label={`${p.name} ${formatWon(p.price)} 선택`}
-                      >
-                        <div className="product-image">
-                          <DrinkArt product={p} />
-                          {p.tag && (
-                            <span className="product-tag">{p.tag}</span>
-                          )}
-                        </div>
-                        <span className="product-name">{p.name}</span>
-                        <span className="product-description">
-                          {p.description}
-                        </span>
-                        <span className="product-price">
-                          {formatWon(p.price)}
-                          <span className="add-circle">+</span>
-                        </span>
-                      </button>
-                    ))}
-                </div>
-                <div className="sticky-actions">
-                  <button className="primary wide" onClick={() => go("cart")}>
-                    <span>
-                      <Icon name="bag" /> 장바구니 {count > 0 && `(${count})`}
-                    </span>
-                    <span>
-                      {formatWon(total)} <Icon name="arrow" />
-                    </span>
-                  </button>
-                </div>
-              </>
-            )}
-            {step === "options" && (
-              <>
-                <div className="selected-product">
-                  <DrinkArt product={selected} large />
-                  <div>
-                    <span className="eyebrow">YOUR SELECTION</span>
-                    <h3>{selected.name}</h3>
-                    <p>{selected.description}</p>
-                    <strong>
-                      {formatWon(
-                        selected.price + (options.size === "Large" ? 500 : 0),
-                      )}
-                    </strong>
-                  </div>
-                </div>
-                <fieldset className="option-field">
-                  <legend>
-                    음료 온도 <span className="required">필수</span>
-                  </legend>
-                  <div className="option-buttons">
-                    {(["HOT", "ICE"] as const).map((t) => (
-                      <button
-                        key={t}
-                        aria-pressed={options.temperature === t}
-                        className={options.temperature === t ? "chosen" : ""}
-                        onClick={() => {
-                          setOptions({ ...options, temperature: t });
-                          setError("");
-                          rescue.record(
-                            "option_changed",
-                            "temperature_changed",
-                          );
-                        }}
-                      >
-                        {t === "HOT" ? "따뜻하게 HOT" : "시원하게 ICE"}
-                      </button>
-                    ))}
-                  </div>
-                </fieldset>
-                <fieldset className="option-field">
-                  <legend>사이즈</legend>
-                  <div className="option-buttons">
-                    {(["Regular", "Large"] as const).map((s) => (
-                      <button
-                        key={s}
-                        aria-pressed={options.size === s}
-                        className={options.size === s ? "chosen" : ""}
-                        onClick={() => {
-                          setOptions({ ...options, size: s });
-                          rescue.record("option_changed", "size_changed");
-                        }}
-                      >
-                        <span>{s === "Regular" ? "레귤러" : "라지"}</span>
-                        <small>
-                          {s === "Regular" ? "기본 사이즈" : "+500원"}
-                        </small>
-                      </button>
-                    ))}
-                  </div>
-                </fieldset>
-                {error && (
-                  <p className="error" role="alert">
-                    {error}
-                  </p>
-                )}
-                <div className="bottom-buttons">
-                  <button
-                    className="secondary"
-                    onClick={() => {
-                      go(editing ? "cart" : "menu");
-                      rescue.record("back_navigation", "previous_step");
-                    }}
-                  >
-                    <Icon name="back" /> 이전
-                  </button>
-                  <button className="primary" onClick={add}>
-                    {editing ? "수정 완료" : "장바구니 담기"}{" "}
-                    <Icon name="arrow" />
-                  </button>
-                </div>
-              </>
-            )}
-            {step === "cart" && (
-              <>
-                {orderList(true)}
-                <button
-                  className="text-button add-more"
-                  onClick={() => go("menu")}
-                >
-                  + 메뉴 더 고르기
-                </button>
-                <div className="total-line">
-                  <span>총 주문 금액</span>
-                  <strong>{formatWon(total)}</strong>
-                </div>
-                <div className="bottom-buttons">
-                  <button
-                    className="secondary"
-                    onClick={() => {
-                      go("menu");
-                      rescue.record("back_navigation", "previous_step");
-                    }}
-                  >
-                    <Icon name="back" /> 메뉴
-                  </button>
-                  <button
-                    className="primary"
-                    disabled={!items.length}
-                    onClick={() => go("review")}
-                  >
-                    주문 검토 <Icon name="arrow" />
-                  </button>
-                </div>
-              </>
-            )}
-            {step === "review" && (
-              <>
-                <div className="notice">
-                  <Icon name="shield" />
-                  <p>
-                    <strong>체험용 주문입니다.</strong>
-                    <br />
-                    실제 주문 전송이나 금액 청구는 없어요.
-                  </p>
-                </div>
-                {orderList(false)}
-                <div className="total-line">
-                  <span>결제 예정 금액</span>
-                  <strong>{formatWon(total)}</strong>
-                </div>
-                <div className="bottom-buttons">
-                  <button
-                    className="secondary"
-                    onClick={() => {
-                      go("cart");
-                      rescue.record("back_navigation", "previous_step");
-                    }}
-                  >
-                    <Icon name="back" /> 주문 수정
-                  </button>
-                  <button className="primary" onClick={() => go("payment")}>
-                    모의 결제로 <Icon name="arrow" />
-                  </button>
-                </div>
-              </>
-            )}
-            {step === "payment" && (
-              <>
-                <div className="payment-card">
-                  <span className="eyebrow">SIMULATION ONLY</span>
-                  <div className="mock-card">
-                    <span>FLOW DEMO</span>
-                    <span className="card-chip" />
-                    <b>실제 카드가 필요 없어요</b>
-                    <span>NO CARD DATA COLLECTED</span>
-                  </div>
-                  <strong>{formatWon(total)}</strong>
-                  <p>
-                    아래 확인란을 선택하고
-                    <br />
-                    모의 결제 완료 버튼을 눌러 주세요.
-                  </p>
-                </div>
-                <label className="checkbox-label">
-                  <input
-                    type="checkbox"
-                    checked={paymentReady}
-                    onChange={(e) => setPaymentReady(e.target.checked)}
-                  />{" "}
-                  실제 결제가 아닌 시뮬레이션임을 확인했어요.
-                </label>
-                {error && (
-                  <p className="error" role="alert">
-                    {error}
-                  </p>
-                )}
-                <div className="bottom-buttons">
-                  <button
-                    className="secondary"
-                    onClick={() => {
-                      go("review");
-                      rescue.record("back_navigation", "previous_step");
-                    }}
-                  >
-                    <Icon name="back" /> 검토
-                  </button>
-                  <button
-                    className="primary"
-                    onClick={() => {
-                      if (!paymentReady) {
-                        setError("모의 결제 안내를 확인해 주세요.");
-                        rescue.record(
-                          "invalid_action",
-                          "mock_payment_ack_required",
-                        );
-                        return;
-                      }
-                      go("complete");
-                    }}
-                  >
-                    모의 결제 완료 <Icon name="check" />
-                  </button>
-                </div>
-              </>
-            )}
-            {step === "complete" && (
-              <div className="completion">
-                <div className="success-ring">
-                  <Icon name="check" size={36} />
-                </div>
-                <span className="eyebrow">THANK YOU FOR YOUR ORDER</span>
-                <p>모의 주문 번호</p>
-                <strong className="order-number">104</strong>
-                <div className="receipt-summary">
-                  <span>{count}개 메뉴</span>
-                  <b>{formatWon(total)}</b>
-                </div>
-                <p>
-                  당신의 한 잔을 천천히 즐겨 주세요.
-                  <br />이 체험에서는 실제 주문이 접수되지 않아요.
-                </p>
-                <button className="primary wide" onClick={() => reset()}>
-                  새로운 주문 체험 <Icon name="reset" />
-                </button>
-              </div>
-            )}
-          </>
+          </span>
         )}
       </div>
-      <footer className="kiosk-footer">
-        <span>
-          <span className="status-dot" /> 모의 결제 · 개인정보 수집 없음
-        </span>
-        {step !== "start" && step !== "complete" && (
-          <button
-            onClick={() => {
-              reset();
-              setAbandoned(true);
-            }}
-          >
-            주문 종료
-          </button>
+      <div className="kiosk" role="region" aria-label="모의 주문 키오스크">
+        <header className="kiosk-top">
+          <span className="coffee-brand">
+            <span className="coffee-mark" aria-hidden="true">
+              F
+            </span>{" "}
+            FLOW COFFEE
+          </span>
+          <span className="device-badge">모의 주문</span>
+        </header>
+        {step !== "start" && (
+          <ol className="journey" aria-label="주문 진행 단계">
+            {journey.map((s, i) => (
+              <li
+                key={s}
+                className={
+                  s === step
+                    ? "current"
+                    : journey.indexOf(step) > i
+                      ? "done"
+                      : ""
+                }
+                aria-current={s === step ? "step" : undefined}
+                aria-label={`${i + 1}. ${stepNames[s]}${journey.indexOf(step) > i ? " 완료" : ""}`}
+              >
+                <span>
+                  {journey.indexOf(step) > i ? (
+                    <Icon name="check" size={13} />
+                  ) : (
+                    i + 1
+                  )}
+                </span>
+                <small>{stepNames[s]}</small>
+              </li>
+            ))}
+          </ol>
         )}
-      </footer>
+        <div
+          className="kiosk-content"
+          onPointerDown={rescue.touch}
+          onKeyDown={rescue.touch}
+        >
+          {step !== "start" && step !== "complete" && mode !== "A" && (
+            <div className="help-toolbar">
+              <button onClick={rescue.request}>
+                <Icon name="info" size={16} /> 도움 요청
+              </button>
+              {mode === "C" && (
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={rescue.enabled}
+                    onChange={(e) => rescue.setEnabled(e.target.checked)}
+                  />{" "}
+                  자동 도움 {rescue.enabled ? "켜짐" : "꺼짐"}
+                </label>
+              )}
+            </div>
+          )}
+          {rescue.dismissed && step !== "complete" && (
+            <p className="suppression-note">
+              이 주문에서는 자동 제안을 멈췄어요. 도움은 직접 요청할 수 있어요.
+            </p>
+          )}
+          <HelpPanel rescue={rescue} step={step} />
+          {step === "start" ? (
+            <div className="welcome">
+              <h2 ref={title}>
+                {abandoned ? "주문이 종료되었습니다." : "주문을 시작해 주세요"}
+              </h2>
+              <p>
+                {abandoned
+                  ? "이전 주문은 종료됐어요. 언제든 새로 시작할 수 있어요."
+                  : "메뉴를 고르고 온도와 크기를 선택해 주세요."}
+              </p>
+              <div className="welcome-art">
+                <DrinkArt product={products[1]} large />
+                <span className="art-caption">
+                  시그니처 카페 라테 · {formatWon(products[1].price)}
+                </span>
+              </div>
+              <button className="primary wide" onClick={() => go("menu")}>
+                주문 시작하기 <Icon name="arrow" />
+              </button>
+              <div className="privacy-line">
+                <Icon name="shield" size={15} /> 실제 결제 없는 안전한
+                체험입니다.
+              </div>
+            </div>
+          ) : (
+            <>
+              <div className="step-title">
+                <span className="eyebrow">
+                  {String(journey.indexOf(step) + 1).padStart(2, "0")} / 06
+                </span>
+                <h2 ref={title} tabIndex={-1}>
+                  {step === "menu"
+                    ? "어떤 한 잔이 좋으세요?"
+                    : step === "options"
+                      ? "취향에 맞게 골라 주세요."
+                      : step === "cart"
+                        ? "고른 메뉴를 확인해요."
+                        : step === "review"
+                          ? "주문 전, 한 번 더 확인해요."
+                          : step === "payment"
+                            ? "마지막으로, 모의 결제."
+                            : "주문이 완료됐어요."}
+                </h2>
+                <p>
+                  {step === "menu"
+                    ? "마음에 드는 메뉴를 선택해 주세요."
+                    : step === "options"
+                      ? "온도는 필수, 크기는 원하는 대로 선택해요."
+                      : step === "cart"
+                        ? "수량과 옵션을 수정할 수 있어요."
+                        : step === "review"
+                          ? "결제 전에 메뉴와 금액을 확인해 주세요."
+                          : step === "payment"
+                            ? "카드번호나 개인정보는 입력하지 않아요."
+                            : "실제 결제나 매장 주문은 발생하지 않았습니다."}
+                </p>
+              </div>
+              {step === "menu" && (
+                <>
+                  <div
+                    className="categories"
+                    role="group"
+                    aria-label="메뉴 카테고리"
+                  >
+                    {["전체", "커피", "논커피", "티 & 에이드"].map((c) => (
+                      <button
+                        key={c}
+                        aria-pressed={category === c}
+                        className={category === c ? "selected" : ""}
+                        onClick={() => setCategory(c)}
+                      >
+                        {c}
+                      </button>
+                    ))}
+                  </div>
+                  <div className="product-grid">
+                    {products
+                      .filter(
+                        (p) => category === "전체" || p.category === category,
+                      )
+                      .map((p) => (
+                        <button
+                          className="product-card"
+                          key={p.id}
+                          onClick={() => choose(p.id)}
+                          aria-label={`${p.name} ${formatWon(p.price)} 선택`}
+                        >
+                          <div className="product-image">
+                            <DrinkArt product={p} />
+                            {p.tag && (
+                              <span className="product-tag">{p.tag}</span>
+                            )}
+                          </div>
+                          <span className="product-name">{p.name}</span>
+                          <span className="product-description">
+                            {p.description}
+                          </span>
+                          <span className="product-price">
+                            {formatWon(p.price)}
+                            <span className="add-circle">+</span>
+                          </span>
+                        </button>
+                      ))}
+                  </div>
+                  <div className="sticky-actions">
+                    <button className="primary wide" onClick={() => go("cart")}>
+                      <span>
+                        <Icon name="bag" /> 장바구니 {count > 0 && `(${count})`}
+                      </span>
+                      <span>
+                        {formatWon(total)} <Icon name="arrow" />
+                      </span>
+                    </button>
+                  </div>
+                </>
+              )}
+              {step === "options" && (
+                <>
+                  <div className="selected-product">
+                    <DrinkArt product={selected} large />
+                    <div>
+                      <h3>{selected.name}</h3>
+                      <p>{selected.description}</p>
+                      <strong>
+                        {formatWon(
+                          selected.price + (options.size === "Large" ? 500 : 0),
+                        )}
+                      </strong>
+                    </div>
+                  </div>
+                  <fieldset className="option-field">
+                    <legend>
+                      음료 온도 <span className="required">필수</span>
+                    </legend>
+                    <div className="option-buttons">
+                      {(["HOT", "ICE"] as const).map((t) => (
+                        <button
+                          key={t}
+                          aria-pressed={options.temperature === t}
+                          className={options.temperature === t ? "chosen" : ""}
+                          onClick={() => {
+                            setOptions({ ...options, temperature: t });
+                            setError("");
+                            rescue.record(
+                              "option_changed",
+                              "temperature_changed",
+                            );
+                          }}
+                        >
+                          {t === "HOT" ? "따뜻하게 HOT" : "시원하게 ICE"}
+                        </button>
+                      ))}
+                    </div>
+                  </fieldset>
+                  <fieldset className="option-field">
+                    <legend>사이즈</legend>
+                    <div className="option-buttons">
+                      {(["Regular", "Large"] as const).map((s) => (
+                        <button
+                          key={s}
+                          aria-pressed={options.size === s}
+                          className={options.size === s ? "chosen" : ""}
+                          onClick={() => {
+                            setOptions({ ...options, size: s });
+                            rescue.record("option_changed", "size_changed");
+                          }}
+                        >
+                          <span>{s === "Regular" ? "레귤러" : "라지"}</span>
+                          <small>
+                            {s === "Regular" ? "기본 사이즈" : "+500원"}
+                          </small>
+                        </button>
+                      ))}
+                    </div>
+                  </fieldset>
+                  {error && (
+                    <p className="error" role="alert">
+                      {error}
+                    </p>
+                  )}
+                  <div className="bottom-buttons">
+                    <button
+                      className="secondary"
+                      onClick={() => {
+                        go(editing ? "cart" : "menu");
+                        rescue.record("back_navigation", "previous_step");
+                      }}
+                    >
+                      <Icon name="back" /> 이전
+                    </button>
+                    <button className="primary" onClick={add}>
+                      {editing ? "수정 완료" : "장바구니 담기"}{" "}
+                      <Icon name="arrow" />
+                    </button>
+                  </div>
+                </>
+              )}
+              {step === "cart" && (
+                <>
+                  {orderList(true)}
+                  <button
+                    className="text-button add-more"
+                    onClick={() => go("menu")}
+                  >
+                    + 메뉴 더 고르기
+                  </button>
+                  <div className="total-line">
+                    <span>총 주문 금액</span>
+                    <strong>{formatWon(total)}</strong>
+                  </div>
+                  <div className="bottom-buttons">
+                    <button
+                      className="secondary"
+                      onClick={() => {
+                        go("menu");
+                        rescue.record("back_navigation", "previous_step");
+                      }}
+                    >
+                      <Icon name="back" /> 메뉴
+                    </button>
+                    <button
+                      className="primary"
+                      disabled={!items.length}
+                      onClick={() => go("review")}
+                    >
+                      주문 검토 <Icon name="arrow" />
+                    </button>
+                  </div>
+                </>
+              )}
+              {step === "review" && (
+                <>
+                  <div className="notice">
+                    <Icon name="shield" />
+                    <p>
+                      <strong>체험용 주문입니다.</strong>
+                      <br />
+                      실제 주문 전송이나 금액 청구는 없어요.
+                    </p>
+                  </div>
+                  {orderList(false)}
+                  <div className="total-line">
+                    <span>결제 예정 금액</span>
+                    <strong>{formatWon(total)}</strong>
+                  </div>
+                  <div className="bottom-buttons">
+                    <button
+                      className="secondary"
+                      onClick={() => {
+                        go("cart");
+                        rescue.record("back_navigation", "previous_step");
+                      }}
+                    >
+                      <Icon name="back" /> 주문 수정
+                    </button>
+                    <button className="primary" onClick={() => go("payment")}>
+                      모의 결제로 <Icon name="arrow" />
+                    </button>
+                  </div>
+                </>
+              )}
+              {step === "payment" && (
+                <>
+                  <div className="payment-card">
+                    <div className="payment-summary">
+                      <Icon name="shield" size={26} />
+                      <strong>모의 결제</strong>
+                      <p>카드번호나 개인정보를 입력하지 않습니다.</p>
+                    </div>
+                    <strong>{formatWon(total)}</strong>
+                    <p>
+                      아래 확인란을 선택하고
+                      <br />
+                      모의 결제 완료 버튼을 눌러 주세요.
+                    </p>
+                  </div>
+                  <label className="checkbox-label">
+                    <input
+                      type="checkbox"
+                      checked={paymentReady}
+                      onChange={(e) => setPaymentReady(e.target.checked)}
+                    />{" "}
+                    실제 결제가 아닌 시뮬레이션임을 확인했어요.
+                  </label>
+                  {error && (
+                    <p className="error" role="alert">
+                      {error}
+                    </p>
+                  )}
+                  <div className="bottom-buttons">
+                    <button
+                      className="secondary"
+                      onClick={() => {
+                        go("review");
+                        rescue.record("back_navigation", "previous_step");
+                      }}
+                    >
+                      <Icon name="back" /> 검토
+                    </button>
+                    <button
+                      className="primary"
+                      onClick={() => {
+                        if (!paymentReady) {
+                          setError("모의 결제 안내를 확인해 주세요.");
+                          rescue.record(
+                            "invalid_action",
+                            "mock_payment_ack_required",
+                          );
+                          return;
+                        }
+                        go("complete");
+                      }}
+                    >
+                      모의 결제 완료 <Icon name="check" />
+                    </button>
+                  </div>
+                </>
+              )}
+              {step === "complete" && (
+                <div className="completion">
+                  <div className="success-ring">
+                    <Icon name="check" size={36} />
+                  </div>
+
+                  <p>모의 주문 번호</p>
+                  <strong className="order-number">104</strong>
+                  <div className="receipt-summary">
+                    <span>{count}개 메뉴</span>
+                    <b>{formatWon(total)}</b>
+                  </div>
+                  <p>
+                    모의 주문 체험이 완료되었습니다.
+                    <br />
+                    실제 매장 주문은 접수되지 않습니다.
+                  </p>
+                  <button className="primary wide" onClick={() => reset()}>
+                    새로운 주문 체험 <Icon name="reset" />
+                  </button>
+                </div>
+              )}
+            </>
+          )}
+        </div>
+        <footer className="kiosk-footer">
+          <span>
+            <span className="status-dot" /> 모의 결제 · 개인정보 수집 없음
+          </span>
+          {step !== "start" && step !== "complete" && (
+            <button
+              onClick={() => {
+                reset();
+                setAbandoned(true);
+              }}
+            >
+              주문 종료
+            </button>
+          )}
+        </footer>
+      </div>
     </div>
   );
 }

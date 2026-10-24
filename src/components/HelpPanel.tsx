@@ -40,13 +40,13 @@ export default function HelpPanel({
     <section className="help-panel" aria-label="상황별 도움" aria-live="polite">
       <div className="help-heading">
         <span className="help-icon">
-          <Icon name="spark" />
+          <Icon name="info" />
         </span>
         <div>
           <span className="mini-label">
             {rescue.help.origin === "auto"
-              ? "CONTEXTUAL SUPPORT"
-              : "ON-DEMAND SUPPORT"}
+              ? "상황 기반 안내"
+              : "직접 요청한 안내"}
           </span>
           <h3>
             {rescue.help.stage === "offer"

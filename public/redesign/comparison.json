@@ -1,0 +1,105 @@
+{
+  "baselineCommit": "ef9f94cc14e3454cbc9b86631eb52c2b2cd5199a",
+  "method": "Actual production-app screenshots. Identical order/preset/filter states and CSS viewports; scrolling is normalized to the relevant area. Historical recent-event content may differ because QA appends events. No performance experiment or physical-device certification.",
+  "pairs": [
+    {
+      "file": "business-base-1440.png",
+      "state": "business-base",
+      "cssWidth": 1440,
+      "widthPixels": 2880,
+      "heightPixels": 1800,
+      "beforeSha256": "4ff097785ae20cd5dbcba3cba514c336f1d60c01506bd56b9e312f25293401d0",
+      "afterSha256": "8b83780269a0ee36f4d6dc7cb4dac987a266726b484864c558da3b68cfc0d708"
+    },
+    {
+      "file": "business-base-390.png",
+      "state": "business-base",
+      "cssWidth": 390,
+      "widthPixels": 780,
+      "heightPixels": 1688,
+      "beforeSha256": "c4b7807f32661ccc82cdbf0e86615b1892402817fa8c1e4db5f9828544cba640",
+      "afterSha256": "4eba1eea1062e41ea90cbcb7cfdc739427b65da17047ed3595276e974f43323a"
+    },
+    {
+      "file": "dashboard-1440.png",
+      "state": "dashboard",
+      "cssWidth": 1440,
+      "widthPixels": 2880,
+      "heightPixels": 1800,
+      "beforeSha256": "8694d3d5dbb0e07e11042fd83b188c5a82045f4319c7059611d27720587509c3",
+      "afterSha256": "83296a08b5e3529b54d99553670976f1d57305052702f5f64f414000b02a6085"
+    },
+    {
+      "file": "dashboard-390.png",
+      "state": "dashboard",
+      "cssWidth": 390,
+      "widthPixels": 780,
+      "heightPixels": 1688,
+      "beforeSha256": "8a2d94e6c15006cb14802c8a2323cc3974c9bc008459bf55d6e6cc70702bcc05",
+      "afterSha256": "a2ce6ab282caf035708a49e73bd0342fa3da85a43c4057f6e119f59b4af1e8ce"
+    },
+    {
+      "file": "dashboard-768.png",
+      "state": "dashboard",
+      "cssWidth": 768,
+      "widthPixels": 1536,
+      "heightPixels": 1800,
+      "beforeSha256": "f48327dc6ff3a0e1cc8d3cc1ba86939a16deaba60b95685a2417139408b04ff9",
+      "afterSha256": "48ef4d9a5429e3ef941e3c7f98e49b06af3ef0a913e86bca87ba7f5c2e658e53"
+    },
+    {
+      "file": "kiosk-context-help-1440.png",
+      "state": "kiosk-context-help",
+      "cssWidth": 1440,
+      "widthPixels": 2880,
+      "heightPixels": 1800,
+      "beforeSha256": "5a25051d0a378638af9803de5b6d47d44cc13d73bb4fd1e258a167303e862e97",
+      "afterSha256": "1af422293d6db62b43bc622963dd55ac113e9344e7ec41f468184c528c1f920c"
+    },
+    {
+      "file": "kiosk-context-help-390.png",
+      "state": "kiosk-context-help",
+      "cssWidth": 390,
+      "widthPixels": 780,
+      "heightPixels": 1688,
+      "beforeSha256": "41a4eea7a69affe9cf1aa5ee8231e62b68f441c5daf8a047795519e99a5a06ad",
+      "afterSha256": "bf4f3dc36a6f473d8754f721ff1b804b4e739a2955cd8676d9ff143647e46077"
+    },
+    {
+      "file": "kiosk-menu-1440.png",
+      "state": "kiosk-menu",
+      "cssWidth": 1440,
+      "widthPixels": 2880,
+      "heightPixels": 1800,
+      "beforeSha256": "9d664c2cf65a926fb2b727d3462a83fc2600dff035e82c6e631ad29f257d4655",
+      "afterSha256": "8dcd71ddf7804208b44c89b2e4d2659ada45a245d9d0d8fcc39cd6f1e7b33634"
+    },
+    {
+      "file": "kiosk-menu-390.png",
+      "state": "kiosk-menu",
+      "cssWidth": 390,
+      "widthPixels": 780,
+      "heightPixels": 1688,
+      "beforeSha256": "6bf984eaa06dedcc323f140fcb1f82da7c415f5dbbfb14ca4df6cfe572e8e92c",
+      "afterSha256": "434cb390276066c1ae2aa41a214e5c1a45ba5a7ea4849359759de35c6323be46"
+    },
+    {
+      "file": "kiosk-start-1440.png",
+      "state": "kiosk-start",
+      "cssWidth": 1440,
+      "widthPixels": 2880,
+      "heightPixels": 1800,
+      "beforeSha256": "509a59c0d08812f8d43aff9a4870463fdcde3e659a47f7ef67b023553c781f6c",
+      "afterSha256": "01869c233a33e8d9c8e623e5df24d0707d85b61d23686d3ab0fae5d0f8ff662c"
+    },
+    {
+      "file": "kiosk-start-detail-1440.png",
+      "state": "kiosk-start-detail",
+      "cssWidth": 1440,
+      "widthPixels": 2880,
+      "heightPixels": 1800,
+      "beforeSha256": "5e32f2a17f5b45ff7e5039a2ade7d5923413d24af65205eae117b66ef5f80a64",
+      "afterSha256": "72a84103dff2730b5cbab2f29775c2ae5b42fd2d40469315898cb81d897301eb"
+    }
+  ]
+}

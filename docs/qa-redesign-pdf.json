@@ -1,0 +1,173 @@
+{
+  "proposalPages": 13,
+  "reviewPages": 13,
+  "replacementCharacters": 0,
+  "layout": [
+    {
+      "name": "proposal",
+      "pages": [
+        {
+          "page": 1,
+          "footerGap": 75.234375,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 2,
+          "footerGap": 154.2109375,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 3,
+          "footerGap": 106.3359375,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 4,
+          "footerGap": 71.1796875,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 5,
+          "footerGap": 112.1796875,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 6,
+          "footerGap": 45.4609375,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 7,
+          "footerGap": 67.6796875,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 8,
+          "footerGap": 16.3828125,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 9,
+          "footerGap": 48.828125,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 10,
+          "footerGap": 139.7421875,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 11,
+          "footerGap": 56.2421875,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 12,
+          "footerGap": 68.2109375,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 13,
+          "footerGap": 141.046875,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        }
+      ]
+    },
+    {
+      "name": "review",
+      "pages": [
+        {
+          "page": 1,
+          "footerGap": 140.75,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 2,
+          "footerGap": 205.8984375,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 3,
+          "footerGap": 23.0546875,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 4,
+          "footerGap": 205.8984375,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 5,
+          "footerGap": 23.0546875,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 6,
+          "footerGap": 33.0546875,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 7,
+          "footerGap": 205.8984375,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 8,
+          "footerGap": 23.0546875,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 9,
+          "footerGap": 205.8984375,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 10,
+          "footerGap": 23.0546875,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 11,
+          "footerGap": 205.8984375,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 12,
+          "footerGap": 205.8984375,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        },
+        {
+          "page": 13,
+          "footerGap": 278.9453125,
+          "horizontalOverflow": false,
+          "brokenImages": 0
+        }
+      ]
+    }
+  ]
+}

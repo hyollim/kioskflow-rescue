@@ -9,11 +9,17 @@ NICE인프라 무인솔루션기획실 지원용 개인 비공식 제안입니�
 ## 바로 체험하고 살펴보기
 
 - **[한국어 B2B 사업제안서 PDF · 13쪽](deliverables/KioskFlow_Rescue_B2B_Proposal_KO.pdf)**
-- **[단일 HTML 데모 내려받기](deliverables/kioskflow-rescue-standalone.html)**: JS/CSS 내장. GitHub HTML 소스 보기 대신 파일을 내려받아 브라우저에서 열 수 있도록 구성했습니다. 같은 파일의 HTTP 제공 실행은 확인했으며, Aside Browser의 `file://` 직접 열기는 권한 제한으로 미검증입니다.
+- **[단일 HTML 데모 내려받기](deliverables/kioskflow-rescue-standalone.html)**: JS/CSS/Pretendard 폰트와 OFL 라이선스 내장. GitHub HTML 소스 보기 대신 파일을 내려받아 브라우저에서 열 수 있도록 구성했습니다. 같은 파일의 HTTP 제공 실행은 확인했으며, Aside Browser의 `file://` 직접 열기는 권한 제한으로 미검증입니다.
 - **검증한 로컬 데모:** `npm ci && npm run build && npm run preview -- --port 4173` 후 http://127.0.0.1:4173/kioskflow-rescue/
 - **공개 배포 [blocked]:** https://hyollim.github.io/kioskflow-rescue/ 는 현재 404. 저장소 Pages 비활성화/Branch=None을 직접 확인했고 설정·권한은 변경하지 않았습니다. [배포 상태·추후 절차](docs/DEPLOYMENT.md)
 
 ![실제 C 모드 도움 제안 시제품 화면 일부](public/screenshots/kiosk-context-help.png)
+
+## Premium Enterprise Minimal 리디자인
+
+운영 플랫폼은 뉴트럴/화이트와 제한적인 파란 활성색, 고객 주문은 아이보리/차콜로 구분했습니다. 본문 최소 14px, 고객 주문 조작 44px 이상과 일관된 포커스·오류 상태를 검증했습니다. 기존 수식·지원 규칙은 유지했습니다.
+
+[리디자인 보고서](docs/REDESIGN_REPORT.md) · [Before/After PDF · 11쌍](deliverables/KioskFlow_Rescue_UI_Redesign_Review.pdf) · [원본 비교](public/redesign/comparison.json)
 
 ## 90초 시연 경로
 
@@ -41,7 +47,7 @@ NICE인프라 무인솔루션기획실 지원용 개인 비공식 제안입니�
 
 ## 실제 검증 결과
 
-최종 QA 기준 **12개 테스트 파일 / 97개 테스트 통과**, TypeScript와 production build 통과. 실제 Aside 브라우저에서 주문 완료, 필수 옵션 오류, C 시나리오·도움, 출처별 대시보드, 입력 변경과 부정 손익을 확인했습니다. PDF는 한글 텍스트/렌더링·13쪽과 레이아웃을 검사했습니다. 390/768/1280px 주요 화면·확대·키보드 점검과 프로젝트 의존성 감사 0건을 확인했습니다. [최종 QA](docs/QA_REPORT.md)와 [실제 테스트 보고서](docs/TEST_REPORT.md)에 기록합니다. 실행하지 않은 실매장/하드웨어 시험을 통과로 표시하지 않습니다.
+리디자인 최종 QA 기준 **13개 테스트 파일 / 103개 테스트 통과**, TypeScript와 production build 통과. 실제 Aside 브라우저에서 주문 완료, 필수 옵션 오류, C 시나리오·도움, 출처별 대시보드, 입력 변경과 부정 손익을 확인했습니다. PDF는 한글 텍스트/렌더링·13쪽과 레이아웃을 검사했습니다. 390/768/1440px, 56개 상태의 주요 화면·확대·키보드 점검과 프로젝트 의존성 감사 0건을 확인했습니다. [최종 QA](docs/QA_REPORT.md)와 [실제 테스트 보고서](docs/TEST_REPORT.md)에 기록합니다. 실행하지 않은 실매장/하드웨어 시험을 통과로 표시하지 않습니다.
 
 ## 개발·재현
 

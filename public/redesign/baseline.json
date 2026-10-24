@@ -1,0 +1,82 @@
+{
+  "baselineCommit": "ef9f94cc14e3454cbc9b86631eb52c2b2cd5199a",
+  "capturedAt": "2026-10-24T11:07:20.434Z",
+  "dpr": 2,
+  "method": "Unmodified baseline production bundle in the same-origin iframe; browser screenshots of the actual app. Desktop 1440×900, tablet 768×900, mobile 390×844 CSS pixels. QA chrome excluded; no product UI manipulated.",
+  "states": {
+    "kiosk-start": "A / start / no current order",
+    "kiosk-start-detail": "A / start / kiosk focused",
+    "kiosk-menu": "A / menu / all 6 products / cart empty",
+    "kiosk-context-help": "C / options scenario / latte / temperature unset / automatic offer",
+    "dashboard": "synthetic / all A,B,C / fixed 12 sessions / completion 75.0%",
+    "business-base": "base preset / 10 devices / net 628000 KRW per month"
+  },
+  "captures": [
+    {
+      "file": "business-base-1440.png",
+      "widthPixels": 2880,
+      "heightPixels": 1800,
+      "sha256": "4ff097785ae20cd5dbcba3cba514c336f1d60c01506bd56b9e312f25293401d0"
+    },
+    {
+      "file": "business-base-390.png",
+      "widthPixels": 780,
+      "heightPixels": 1688,
+      "sha256": "c4b7807f32661ccc82cdbf0e86615b1892402817fa8c1e4db5f9828544cba640"
+    },
+    {
+      "file": "dashboard-1440.png",
+      "widthPixels": 2880,
+      "heightPixels": 1800,
+      "sha256": "8694d3d5dbb0e07e11042fd83b188c5a82045f4319c7059611d27720587509c3"
+    },
+    {
+      "file": "dashboard-390.png",
+      "widthPixels": 780,
+      "heightPixels": 1688,
+      "sha256": "8a2d94e6c15006cb14802c8a2323cc3974c9bc008459bf55d6e6cc70702bcc05"
+    },
+    {
+      "file": "dashboard-768.png",
+      "widthPixels": 1536,
+      "heightPixels": 1800,
+      "sha256": "f48327dc6ff3a0e1cc8d3cc1ba86939a16deaba60b95685a2417139408b04ff9"
+    },
+    {
+      "file": "kiosk-context-help-1440.png",
+      "widthPixels": 2880,
+      "heightPixels": 1800,
+      "sha256": "5a25051d0a378638af9803de5b6d47d44cc13d73bb4fd1e258a167303e862e97"
+    },
+    {
+      "file": "kiosk-context-help-390.png",
+      "widthPixels": 780,
+      "heightPixels": 1688,
+      "sha256": "41a4eea7a69affe9cf1aa5ee8231e62b68f441c5daf8a047795519e99a5a06ad"
+    },
+    {
+      "file": "kiosk-menu-1440.png",
+      "widthPixels": 2880,
+      "heightPixels": 1800,
+      "sha256": "9d664c2cf65a926fb2b727d3462a83fc2600dff035e82c6e631ad29f257d4655"
+    },
+    {
+      "file": "kiosk-menu-390.png",
+      "widthPixels": 780,
+      "heightPixels": 1688,
+      "sha256": "6bf984eaa06dedcc323f140fcb1f82da7c415f5dbbfb14ca4df6cfe572e8e92c"
+    },
+    {
+      "file": "kiosk-start-1440.png",
+      "widthPixels": 2880,
+      "heightPixels": 1800,
+      "sha256": "509a59c0d08812f8d43aff9a4870463fdcde3e659a47f7ef67b023553c781f6c"
+    },
+    {
+      "file": "kiosk-start-detail-1440.png",
+      "widthPixels": 2880,
+      "heightPixels": 1800,
+      "sha256": "5e32f2a17f5b45ff7e5039a2ade7d5923413d24af65205eae117b66ef5f80a64"
+    }
+  ]
+}
