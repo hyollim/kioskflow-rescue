@@ -30,3 +30,10 @@
 - KPI 정의/분모/한계, 고객·공급사 BM, 실증·제휴·한계 문서 작성. 실제 성과와 가정, 대리지표와 사업성 오개입률의 차이를 명시.
 - 실제 검증: 9 files / 82 tests, TypeScript·production build, 브라우저 대시보드/직접 비용 변경/음수 시나리오 확인.
 - 다음: 실제 화면·PDF·README·GitHub Pages 가능 여부 검사와 최종 QA.
+
+## Phase 4 | 2026-10-24
+- Phase 3 af052c617aec46e32842ebfb0f1864344061bbfd 자동 업로드·main 불변 확인 후 착수.
+- Pages 비활성/목표 URL 404를 실제 확인, 설정/권한 확대 없이 공개 배포만 [blocked].
+- 로컬 검증 CI(contents:read), 제한 정적 preview 서버, 내장 HTML 데모, 실제 스크린샷 6종, 한국어 13쪽 PDF와 README 작성.
+- PDF 한글 추출·13페이지 렌더·대표 페이지 시각/전 페이지 레이아웃 검사. KPI 페이지 넘침 수정 후 최솟값 17px 여유 확인.
+- 다음: 최종 모바일/태블릿·확대·키보드·회귀·문서 정합성 및 원격 CI 확인.
