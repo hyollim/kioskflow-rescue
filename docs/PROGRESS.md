@@ -17,3 +17,9 @@
 - 프로젝트 로컬 esbuild-wasm / Rollup WASM override와 optional native watcher 제외 후 실행 정상화. .npmrc에 ignore-scripts/omit=optional 기록.
 - 실제 실행: Vitest 2 files / 14 tests passed, TypeScript 및 production build 통과. 브라우저 검증은 이어서 실시.
 - 실제 Aside 브라우저에서 라테 주문 전 경로 및 필수 옵션 오류/완료 안내 확인. 데스크톱 시각 확인 완료.
+
+## Phase 2 | 2026-10-24
+- Phase 1 de3bfdf0bd82cf0196b49ab55da3b3f04275aaf8 자동 업로드와 main 불변 확인 후 착수.
+- A/B/C, 복합 규칙·우선순위·거절/억제·수동 도움·직원 호출 시뮬레이션, 6개 재현 시나리오, 최소 이벤트를 구현.
+- 규칙·시나리오와 한계를 RULES.md에 문서화. 실제 브라우저에서 C 옵션 실패 화면·도움·이벤트를 함께 확인.
+- 실제 테스트: 5 files / 40 tests, TypeScript 및 production build 통과. 다음: 이벤트 저장·KPI·사업성 계산.
