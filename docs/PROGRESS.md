@@ -8,3 +8,12 @@
 - PRD·설계·로드맵 작성. 시장 대안 자료는 확인 후 추가.
 - 아직 앱 테스트/배포는 수행 전이다.
 - 단계 커밋 SHA와 업로드 결과는 커밋 후 실행 보고에 남긴다(자기참조 SHA를 문서에 강제로 넣지 않음).
+
+## Phase 1 | 2026-10-24
+- Phase 0 커밋 173058c62d05c25b8def4796c649f714f80303c9: 자동 서비스 업로드 후 원격 SHA 일치, main 불변 확인.
+- React/TypeScript/Vite 주문 MVP: 카테고리·필수 온도·크기·수량·옵션 수정·검토·확인란 기반 모의 결제·완료·종료 구현.
+- 한국어 반응형 레이아웃, 키보드 포커스·확대·오류 안내 구현. B/C와 분석은 아직 다음 단계 범위.
+- 초기 최신 네이티브 도구 실행은 결과 없이 정지. 설치 모듈에 macOS quarantine 속성 및 fsevents 네이티브 모듈 존재 확인. 보안 속성은 변경하지 않음.
+- 프로젝트 로컬 esbuild-wasm / Rollup WASM override와 optional native watcher 제외 후 실행 정상화. .npmrc에 ignore-scripts/omit=optional 기록.
+- 실제 실행: Vitest 2 files / 14 tests passed, TypeScript 및 production build 통과. 브라우저 검증은 이어서 실시.
+- 실제 Aside 브라우저에서 라테 주문 전 경로 및 필수 옵션 오류/완료 안내 확인. 데스크톱 시각 확인 완료.
