@@ -1,5 +1,69 @@
-import { eventLabels,type KioskEvent } from './events';
-export const EVENT_STORAGE_KEY='kioskflow.events.v1';
-const safeId=(x:unknown):x is string=>typeof x==='string'&&/^[a-zA-Z0-9_-]{1,100}$/.test(x);
-export function parseEvents(raw:string|null):KioskEvent[]{if(!raw)return [];try{const arr:unknown=JSON.parse(raw);if(!Array.isArray(arr))return [];return arr.flatMap((value:unknown)=>{if(!value||typeof value!=='object')return [];const v=value as Record<string,unknown>;if(!safeId(v.id)||!safeId(v.sessionId)||!['A','B','C'].includes(String(v.mode))||!['live','scenario','synthetic'].includes(String(v.source))||!Object.hasOwn(eventLabels,String(v.name))||!['start','menu','options','cart','review','payment','complete'].includes(String(v.step))||typeof v.at!=='number'||!Number.isFinite(v.at)||v.at<0)return [];const e:KioskEvent={id:v.id,sessionId:v.sessionId,mode:v.mode as KioskEvent['mode'],source:v.source as KioskEvent['source'],name:v.name as KioskEvent['name'],step:v.step as KioskEvent['step'],at:v.at};if(v.origin==='manual'||v.origin==='auto')e.origin=v.origin;if(safeId(v.offerId))e.offerId=v.offerId;if(typeof v.reason==='string'&&/^[a-z_]{1,50}$/.test(v.reason))e.reason=v.reason;return [e]})}catch{return []}}
-export function pruneEvents(events:KioskEvent[],limit=2000):KioskEvent[]{if(!Number.isInteger(limit)||limit<2)throw new Error('limit must be >= 2');let result=[...new Map(events.map(e=>[e.id,e])).values()];const ids=[...new Set(result.map(e=>e.sessionId))];while(result.length>limit&&ids.length>1){const oldest=ids.shift();result=result.filter(e=>e.sessionId!==oldest)}if(result.length>limit){const start=result.find(e=>e.name==='session_started');const tail=result.slice(-(limit-1));result=start?[start,...tail.filter(e=>e.id!==start.id)]:result.slice(-limit)}return result}
+import { eventLabels, type KioskEvent } from "./events";
+export const EVENT_STORAGE_KEY = "kioskflow.events.v1";
+const safeId = (x: unknown): x is string =>
+  typeof x === "string" && /^[a-zA-Z0-9_-]{1,100}$/.test(x);
+export function parseEvents(raw: string | null): KioskEvent[] {
+  if (!raw) return [];
+  try {
+    const arr: unknown = JSON.parse(raw);
+    if (!Array.isArray(arr)) return [];
+    return arr.flatMap((value: unknown) => {
+      if (!value || typeof value !== "object") return [];
+      const v = value as Record<string, unknown>;
+      if (
+        !safeId(v.id) ||
+        !safeId(v.sessionId) ||
+        !["A", "B", "C"].includes(String(v.mode)) ||
+        !["live", "scenario", "synthetic"].includes(String(v.source)) ||
+        !Object.hasOwn(eventLabels, String(v.name)) ||
+        ![
+          "start",
+          "menu",
+          "options",
+          "cart",
+          "review",
+          "payment",
+          "complete",
+        ].includes(String(v.step)) ||
+        typeof v.at !== "number" ||
+        !Number.isFinite(v.at) ||
+        v.at < 0
+      )
+        return [];
+      const e: KioskEvent = {
+        id: v.id,
+        sessionId: v.sessionId,
+        mode: v.mode as KioskEvent["mode"],
+        source: v.source as KioskEvent["source"],
+        name: v.name as KioskEvent["name"],
+        step: v.step as KioskEvent["step"],
+        at: v.at,
+      };
+      if (v.origin === "manual" || v.origin === "auto") e.origin = v.origin;
+      if (safeId(v.offerId)) e.offerId = v.offerId;
+      if (typeof v.reason === "string" && /^[a-z_]{1,50}$/.test(v.reason))
+        e.reason = v.reason;
+      return [e];
+    });
+  } catch {
+    return [];
+  }
+}
+export function pruneEvents(events: KioskEvent[], limit = 2000): KioskEvent[] {
+  if (!Number.isInteger(limit) || limit < 2)
+    throw new Error("limit must be >= 2");
+  let result = [...new Map(events.map((e) => [e.id, e])).values()];
+  const ids = [...new Set(result.map((e) => e.sessionId))];
+  while (result.length > limit && ids.length > 1) {
+    const oldest = ids.shift();
+    result = result.filter((e) => e.sessionId !== oldest);
+  }
+  if (result.length > limit) {
+    const start = result.find((e) => e.name === "session_started");
+    const tail = result.slice(-(limit - 1));
+    result = start
+      ? [start, ...tail.filter((e) => e.id !== start.id)]
+      : result.slice(-limit);
+  }
+  return result;
+}

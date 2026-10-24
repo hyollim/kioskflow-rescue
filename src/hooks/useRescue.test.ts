@@ -1,11 +1,100 @@
-import { act,renderHook } from '@testing-library/react';
-import { describe,expect,it } from 'vitest';
-import { useRescue } from './useRescue';
-import type { KioskEvent } from '../domain/events';
-describe('event and help lifecycle',()=>{
- it('logs one offer, acceptance, simulated staff request and terminal completion',()=>{const events:KioskEvent[]=[];const {result}=renderHook(()=>useRescue('C',e=>events.push(e)));act(()=>{result.current.begin();result.current.enter('options');result.current.record('invalid_action');result.current.record('invalid_action');result.current.advance(21_000)});expect(result.current.help?.stage).toBe('offer');act(()=>result.current.accept());expect(result.current.help?.stage).toBe('guide');act(()=>result.current.staff());expect(result.current.staffNotice).toBe(true);act(()=>result.current.enter('complete'));expect(result.current.help).toBeNull();expect(events.filter(e=>e.name==='help_offered')).toHaveLength(1);expect(events.find(e=>e.name==='help_accepted')?.offerId).toBe(events.find(e=>e.name==='help_offered')?.offerId);expect(events.filter(e=>e.name==='order_completed')).toHaveLength(1);expect(events.some(e=>e.name==='staff_assistance_requested')).toBe(true)});
- it('suppresses automatic reoffers for the session after rejection, not manual help',()=>{const events:KioskEvent[]=[];const {result}=renderHook(()=>useRescue('C',e=>events.push(e)));act(()=>{result.current.begin();result.current.enter('options');result.current.record('invalid_action');result.current.record('invalid_action');result.current.advance(21_000);result.current.decline();result.current.advance(20_000)});expect(result.current.help).toBeNull();expect(result.current.dismissed).toBe(true);expect(events.filter(e=>e.name==='help_offered')).toHaveLength(1);act(()=>result.current.request());expect(result.current.help?.origin).toBe('manual')});
- it('B has on-demand help but A has none',()=>{for(const mode of ['A','B'] as const){const events:KioskEvent[]=[];const {result,unmount}=renderHook(()=>useRescue(mode,e=>events.push(e)));act(()=>{result.current.begin();result.current.enter('menu');result.current.record('invalid_action');result.current.record('invalid_action');result.current.advance(21_000)});expect(result.current.help).toBeNull();act(()=>result.current.request());expect(result.current.help?.stage??null).toBe(mode==='B'?'guide':null);expect(events.some(e=>e.name==='help_offered')).toBe(false);unmount()}});
- it('marks explicit reset as abandonment and isolates scenario sessions',()=>{const events:KioskEvent[]=[];const {result}=renderHook(()=>useRescue('C',e=>events.push(e)));act(()=>{result.current.begin();result.current.enter('menu');result.current.reset('scenario_switch');result.current.begin('scenario');result.current.enter('options')});expect(events.filter(e=>e.name==='session_abandoned')).toHaveLength(1);expect(events.at(-1)?.source).toBe('scenario');expect(new Set(events.map(e=>e.sessionId)).size).toBe(2)});
- it('does not offer when disabled',()=>{const {result}=renderHook(()=>useRescue('C'));act(()=>{result.current.begin();result.current.enter('options');result.current.setEnabled(false);result.current.record('invalid_action');result.current.record('invalid_action');result.current.advance(21_000)});expect(result.current.help).toBeNull()});
+import { act, renderHook } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
+import { useRescue } from "./useRescue";
+import type { KioskEvent } from "../domain/events";
+describe("event and help lifecycle", () => {
+  it("logs one offer, acceptance, simulated staff request and terminal completion", () => {
+    const events: KioskEvent[] = [];
+    const { result } = renderHook(() => useRescue("C", (e) => events.push(e)));
+    act(() => {
+      result.current.begin();
+      result.current.enter("options");
+      result.current.record("invalid_action");
+      result.current.record("invalid_action");
+      result.current.advance(21_000);
+    });
+    expect(result.current.help?.stage).toBe("offer");
+    act(() => result.current.accept());
+    expect(result.current.help?.stage).toBe("guide");
+    act(() => result.current.staff());
+    expect(result.current.staffNotice).toBe(true);
+    act(() => result.current.enter("complete"));
+    expect(result.current.help).toBeNull();
+    expect(events.filter((e) => e.name === "help_offered")).toHaveLength(1);
+    expect(events.find((e) => e.name === "help_accepted")?.offerId).toBe(
+      events.find((e) => e.name === "help_offered")?.offerId,
+    );
+    expect(events.filter((e) => e.name === "order_completed")).toHaveLength(1);
+    expect(events.some((e) => e.name === "staff_assistance_requested")).toBe(
+      true,
+    );
+  });
+  it("suppresses automatic reoffers for the session after rejection, not manual help", () => {
+    const events: KioskEvent[] = [];
+    const { result } = renderHook(() => useRescue("C", (e) => events.push(e)));
+    act(() => {
+      result.current.begin();
+      result.current.enter("options");
+      result.current.record("invalid_action");
+      result.current.record("invalid_action");
+      result.current.advance(21_000);
+      result.current.decline();
+      result.current.advance(20_000);
+    });
+    expect(result.current.help).toBeNull();
+    expect(result.current.dismissed).toBe(true);
+    expect(events.filter((e) => e.name === "help_offered")).toHaveLength(1);
+    act(() => result.current.request());
+    expect(result.current.help?.origin).toBe("manual");
+  });
+  it("B has on-demand help but A has none", () => {
+    for (const mode of ["A", "B"] as const) {
+      const events: KioskEvent[] = [];
+      const { result, unmount } = renderHook(() =>
+        useRescue(mode, (e) => events.push(e)),
+      );
+      act(() => {
+        result.current.begin();
+        result.current.enter("menu");
+        result.current.record("invalid_action");
+        result.current.record("invalid_action");
+        result.current.advance(21_000);
+      });
+      expect(result.current.help).toBeNull();
+      act(() => result.current.request());
+      expect(result.current.help?.stage ?? null).toBe(
+        mode === "B" ? "guide" : null,
+      );
+      expect(events.some((e) => e.name === "help_offered")).toBe(false);
+      unmount();
+    }
+  });
+  it("marks explicit reset as abandonment and isolates scenario sessions", () => {
+    const events: KioskEvent[] = [];
+    const { result } = renderHook(() => useRescue("C", (e) => events.push(e)));
+    act(() => {
+      result.current.begin();
+      result.current.enter("menu");
+      result.current.reset("scenario_switch");
+      result.current.begin("scenario");
+      result.current.enter("options");
+    });
+    expect(events.filter((e) => e.name === "session_abandoned")).toHaveLength(
+      1,
+    );
+    expect(events.at(-1)?.source).toBe("scenario");
+    expect(new Set(events.map((e) => e.sessionId)).size).toBe(2);
+  });
+  it("does not offer when disabled", () => {
+    const { result } = renderHook(() => useRescue("C"));
+    act(() => {
+      result.current.begin();
+      result.current.enter("options");
+      result.current.setEnabled(false);
+      result.current.record("invalid_action");
+      result.current.record("invalid_action");
+      result.current.advance(21_000);
+    });
+    expect(result.current.help).toBeNull();
+  });
 });

@@ -1,13 +1,127 @@
-import { describe,expect,it } from 'vitest';
-import { baseInputs,businessPresets,calculateBusiness,validateBusiness } from './business';
-describe('customer incremental business model in KRW per month',()=>{
- it('matches hand-calculated base values without double-counting setup',()=>{const r=calculateBusiness(baseInputs);expect(r.attempts).toBe(30000);expect(r.recovered).toBe(600);expect(r.recoveryProfit).toBe(900000);expect(r.staffSavings).toBe(288000);expect(r.subscription).toBe(450000);expect(r.falseCost).toBe(30000);expect(r.monthlyNet).toBe(628000);expect(r.beforeProfit).toBe(39060000);expect(r.afterProfit).toBe(39688000);expect(r.afterProfit-r.beforeProfit).toBe(r.monthlyNet);expect(r.paybackMonths).toBeCloseTo(3000000/628000);expect(r.annualNetAfterSetup).toBe(4536000);expect(r.roi12).toBeCloseTo(1.512);expect(r.recommendation).toBe('소규모 실증 권고')});
- it('returns appropriate decisions for all scenario presets',()=>{expect(businessPresets.map(p=>calculateBusiness(p.inputs).recommendation)).toEqual(['소규모 실증 권고','소규모 실증 권고','실증 추가 필요','도입 보류'])});
- it('keeps fixed costs when one device has zero attempts',()=>{const r=calculateBusiness({...baseInputs,devices:1,attemptsPerDevice:0,monthlyFee:10,maintenanceTotal:50,setupTotal:1000});expect(r.recovered).toBe(0);expect(r.monthlyNet).toBe(-60);expect(r.roi12).toBeCloseTo(-1.72);expect(r.paybackMonths).toBeNull();expect(r.recommendation).toBe('도입 보류')});
- it('treats zero upfront cost as undefined ROI and zero payback if profitable',()=>{const r=calculateBusiness({...baseInputs,devices:1,attemptsPerDevice:100,abandonRate:.2,recoveryShare:.5,marginPerOrder:10,staffRate:0,monthlyFee:0,maintenanceTotal:0,falseRate:0,setupTotal:0});expect(r.recovered).toBe(10);expect(r.monthlyNet).toBe(100);expect(r.roi12).toBeNull();expect(r.paybackMonths).toBe(0)});
- it('does not divide by zero for break-even net benefit',()=>{const r=calculateBusiness({...baseInputs,attemptsPerDevice:0,monthlyFee:0,maintenanceTotal:0});expect(r.monthlyNet).toBe(0);expect(r.paybackMonths).toBeNull();expect(r.recommendation).toBe('도입 보류')});
- it('applies risk gates at 10% and 20%, with hold taking priority',()=>{const v={...baseInputs,monthlyFee:0,maintenanceTotal:0,falseCost:0,setupTotal:100};expect(calculateBusiness({...v,falseRate:.0999}).recommendation).toBe('소규모 실증 권고');expect(calculateBusiness({...v,falseRate:.1}).recommendation).toBe('실증 추가 필요');expect(calculateBusiness({...v,falseRate:.2}).recommendation).toBe('도입 보류')});
- it('does not count setup as a monthly cost',()=>{const r=calculateBusiness(baseInputs),expensive=calculateBusiness({...baseInputs,setupTotal:12000000});expect(expensive.monthlyNet).toBe(r.monthlyNet);expect(expensive.roi12).toBeLessThan(r.roi12!);expect(expensive.recommendation).toBe('실증 추가 필요')});
- it('cannot recover more transactions than baseline abandoned',()=>{const r=calculateBusiness({...baseInputs,recoveryShare:1});expect(r.potentialCompleted).toBe(r.attempts);expect(r.recovered).toBe(r.attempts*baseInputs.abandonRate)});
- it.each([{devices:0},{devices:1.5},{attemptsPerDevice:-1},{recoveryShare:1.01},{staffReduction:1.1},{falseRate:-.1},{setupTotal:-1},{marginPerOrder:Infinity},{monthlyFee:NaN}])('rejects invalid inputs %j',patch=>{expect(validateBusiness({...baseInputs,...patch}).length).toBeGreaterThan(0);expect(()=>calculateBusiness({...baseInputs,...patch})).toThrow()});
+import { describe, expect, it } from "vitest";
+import {
+  baseInputs,
+  businessPresets,
+  calculateBusiness,
+  validateBusiness,
+} from "./business";
+describe("customer incremental business model in KRW per month", () => {
+  it("matches hand-calculated base values without double-counting setup", () => {
+    const r = calculateBusiness(baseInputs);
+    expect(r.attempts).toBe(30000);
+    expect(r.recovered).toBe(600);
+    expect(r.recoveryProfit).toBe(900000);
+    expect(r.staffSavings).toBe(288000);
+    expect(r.subscription).toBe(450000);
+    expect(r.falseCost).toBe(30000);
+    expect(r.monthlyNet).toBe(628000);
+    expect(r.beforeProfit).toBe(39060000);
+    expect(r.afterProfit).toBe(39688000);
+    expect(r.afterProfit - r.beforeProfit).toBe(r.monthlyNet);
+    expect(r.paybackMonths).toBeCloseTo(3000000 / 628000);
+    expect(r.annualNetAfterSetup).toBe(4536000);
+    expect(r.roi12).toBeCloseTo(1.512);
+    expect(r.recommendation).toBe("소규모 실증 권고");
+  });
+  it("returns appropriate decisions for all scenario presets", () => {
+    expect(
+      businessPresets.map((p) => calculateBusiness(p.inputs).recommendation),
+    ).toEqual([
+      "소규모 실증 권고",
+      "소규모 실증 권고",
+      "실증 추가 필요",
+      "도입 보류",
+    ]);
+  });
+  it("keeps fixed costs when one device has zero attempts", () => {
+    const r = calculateBusiness({
+      ...baseInputs,
+      devices: 1,
+      attemptsPerDevice: 0,
+      monthlyFee: 10,
+      maintenanceTotal: 50,
+      setupTotal: 1000,
+    });
+    expect(r.recovered).toBe(0);
+    expect(r.monthlyNet).toBe(-60);
+    expect(r.roi12).toBeCloseTo(-1.72);
+    expect(r.paybackMonths).toBeNull();
+    expect(r.recommendation).toBe("도입 보류");
+  });
+  it("treats zero upfront cost as undefined ROI and zero payback if profitable", () => {
+    const r = calculateBusiness({
+      ...baseInputs,
+      devices: 1,
+      attemptsPerDevice: 100,
+      abandonRate: 0.2,
+      recoveryShare: 0.5,
+      marginPerOrder: 10,
+      staffRate: 0,
+      monthlyFee: 0,
+      maintenanceTotal: 0,
+      falseRate: 0,
+      setupTotal: 0,
+    });
+    expect(r.recovered).toBe(10);
+    expect(r.monthlyNet).toBe(100);
+    expect(r.roi12).toBeNull();
+    expect(r.paybackMonths).toBe(0);
+  });
+  it("does not divide by zero for break-even net benefit", () => {
+    const r = calculateBusiness({
+      ...baseInputs,
+      attemptsPerDevice: 0,
+      monthlyFee: 0,
+      maintenanceTotal: 0,
+    });
+    expect(r.monthlyNet).toBe(0);
+    expect(r.paybackMonths).toBeNull();
+    expect(r.recommendation).toBe("도입 보류");
+  });
+  it("applies risk gates at 10% and 20%, with hold taking priority", () => {
+    const v = {
+      ...baseInputs,
+      monthlyFee: 0,
+      maintenanceTotal: 0,
+      falseCost: 0,
+      setupTotal: 100,
+    };
+    expect(calculateBusiness({ ...v, falseRate: 0.0999 }).recommendation).toBe(
+      "소규모 실증 권고",
+    );
+    expect(calculateBusiness({ ...v, falseRate: 0.1 }).recommendation).toBe(
+      "실증 추가 필요",
+    );
+    expect(calculateBusiness({ ...v, falseRate: 0.2 }).recommendation).toBe(
+      "도입 보류",
+    );
+  });
+  it("does not count setup as a monthly cost", () => {
+    const r = calculateBusiness(baseInputs),
+      expensive = calculateBusiness({ ...baseInputs, setupTotal: 12000000 });
+    expect(expensive.monthlyNet).toBe(r.monthlyNet);
+    expect(expensive.roi12).toBeLessThan(r.roi12!);
+    expect(expensive.recommendation).toBe("실증 추가 필요");
+  });
+  it("cannot recover more transactions than baseline abandoned", () => {
+    const r = calculateBusiness({ ...baseInputs, recoveryShare: 1 });
+    expect(r.potentialCompleted).toBe(r.attempts);
+    expect(r.recovered).toBe(r.attempts * baseInputs.abandonRate);
+  });
+  it.each([
+    { devices: 0 },
+    { devices: 1.5 },
+    { attemptsPerDevice: -1 },
+    { recoveryShare: 1.01 },
+    { staffReduction: 1.1 },
+    { falseRate: -0.1 },
+    { setupTotal: -1 },
+    { marginPerOrder: Infinity },
+    { monthlyFee: NaN },
+  ])("rejects invalid inputs %j", (patch) => {
+    expect(
+      validateBusiness({ ...baseInputs, ...patch }).length,
+    ).toBeGreaterThan(0);
+    expect(() => calculateBusiness({ ...baseInputs, ...patch })).toThrow();
+  });
 });

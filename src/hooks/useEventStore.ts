@@ -1,4 +1,37 @@
-import { useEffect,useState } from 'react';
-import type { KioskEvent } from '../domain/events';
-import { EVENT_STORAGE_KEY,parseEvents,pruneEvents } from '../domain/storage';
-export function useEventStore(){const [initial]=useState(()=>{try{return {events:parseEvents(window.localStorage.getItem(EVENT_STORAGE_KEY)),failed:false}}catch{return {events:[] as KioskEvent[],failed:true}}});const [events,setEvents]=useState(initial.events),[storageFailed,setStorageFailed]=useState(initial.failed);useEffect(()=>{try{window.localStorage.setItem(EVENT_STORAGE_KEY,JSON.stringify(events));setStorageFailed(false)}catch{setStorageFailed(true)}},[events]);function append(e:KioskEvent){setEvents(previous=>pruneEvents([...previous,e]))}function clear(){setEvents([]);try{window.localStorage.removeItem(EVENT_STORAGE_KEY)}catch{setStorageFailed(true)}}return {events,append,clear,storageFailed}}
+import { useEffect, useState } from "react";
+import type { KioskEvent } from "../domain/events";
+import { EVENT_STORAGE_KEY, parseEvents, pruneEvents } from "../domain/storage";
+export function useEventStore() {
+  const [initial] = useState(() => {
+    try {
+      return {
+        events: parseEvents(window.localStorage.getItem(EVENT_STORAGE_KEY)),
+        failed: false,
+      };
+    } catch {
+      return { events: [] as KioskEvent[], failed: true };
+    }
+  });
+  const [events, setEvents] = useState(initial.events),
+    [storageFailed, setStorageFailed] = useState(initial.failed);
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(EVENT_STORAGE_KEY, JSON.stringify(events));
+      setStorageFailed(false);
+    } catch {
+      setStorageFailed(true);
+    }
+  }, [events]);
+  function append(e: KioskEvent) {
+    setEvents((previous) => pruneEvents([...previous, e]));
+  }
+  function clear() {
+    setEvents([]);
+    try {
+      window.localStorage.removeItem(EVENT_STORAGE_KEY);
+    } catch {
+      setStorageFailed(true);
+    }
+  }
+  return { events, append, clear, storageFailed };
+}

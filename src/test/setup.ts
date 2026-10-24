@@ -1,6 +1,6 @@
-import '@testing-library/jest-dom/vitest';
-import { cleanup } from '@testing-library/react';
-import { afterEach,beforeEach } from 'vitest';
-afterEach(()=>cleanup());
+import "@testing-library/jest-dom/vitest";
+import { cleanup } from "@testing-library/react";
+import { afterEach, beforeEach } from "vitest";
+afterEach(() => cleanup());
 
-beforeEach(()=>window.localStorage.removeItem('kioskflow.events.v1'));
+beforeEach(() => window.localStorage.removeItem("kioskflow.events.v1"));

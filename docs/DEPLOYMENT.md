@@ -21,3 +21,6 @@
 Aside Browser는 로컬 file URL 탐색 권한이 없어 직접 파일 열기는 차단됐다. 이 권한은 변경하지 않았다. 같은 HTML을 프로젝트 한정 loopback 정적 서버로 제공해 실행을 검증하며, 원격 자산 없이 JS/CSS 내장 여부도 검사한다. file:// 직접 실행 성공까지 주장하지 않는다. `node scripts/serve-preview.mjs`는 dist/deliverables/screenshots 세 경로만 127.0.0.1:4174에 제공하며 Git·설정·소스 디렉터리는 제공하지 않는다.
 - 목표 공개 URL을 실제 브라우저로 접속했으며 ‘Site not found · GitHub Pages’, 404를 확인했다. 공개 배포 성공으로 보고하지 않는다.
 - 단일 HTML을 127.0.0.1:4174/deliverables/에서 열고 메뉴 클릭, C 옵션 오류 도움, 분석/사업성 전환·음수 시나리오가 동작함을 확인했다. file URL 직접 검증은 차단 상태다.
+
+## 원격 CI 검증
+9d11dc8의 Validate portfolio #1은 https://github.com/hyollim/kioskflow-rescue/actions/runs/40070606451 에서 Success(29초), test-and-build 및 정적 artifact 생성을 확인했다. Node20 action 경고는 최종 workflow에서 v5/Node24 및 ubuntu-24.04로 조정했다. CI 성공은 Pages 배포 성공과 다르다.

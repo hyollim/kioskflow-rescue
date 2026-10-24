@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-24",
+  "engine": "axe-core 4.14.0",
+  "scope": "CSS iframe viewport tests, not physical mobile or screen-reader certification. Automated incomplete checks need manual review.",
+  "initialIssues": "Supporting text contrast; keyboard access to horizontal table scroll areas. Fixed and rerun.",
+  "checks": [
+    {
+      "label": "FINAL 390px start",
+      "width": 390,
+      "documentWidth": 390,
+      "violations": [],
+      "passes": 19,
+      "incomplete": 2
+    },
+    {
+      "label": "FINAL 390px dashboard live after refresh",
+      "width": 390,
+      "documentWidth": 390,
+      "violations": [],
+      "passes": 26,
+      "incomplete": 1
+    },
+    {
+      "label": "FINAL 390px dashboard synthetic",
+      "width": 390,
+      "documentWidth": 390,
+      "violations": [],
+      "passes": 26,
+      "incomplete": 1
+    },
+    {
+      "label": "FINAL 390px business base",
+      "width": 390,
+      "documentWidth": 390,
+      "violations": [],
+      "passes": 20,
+      "incomplete": 2
+    },
+    {
+      "label": "FINAL 390px business negative",
+      "width": 390,
+      "documentWidth": 390,
+      "violations": [],
+      "passes": 20,
+      "incomplete": 2
+    },
+    {
+      "label": "FINAL 390px business negative enlarged",
+      "width": 390,
+      "documentWidth": 390,
+      "violations": [],
+      "passes": 20,
+      "incomplete": 2
+    },
+    {
+      "label": "FINAL 768px business negative enlarged",
+      "width": 768,
+      "documentWidth": 768,
+      "violations": [],
+      "passes": 20,
+      "incomplete": 2
+    },
+    {
+      "label": "FINAL 768px menu enlarged",
+      "width": 768,
+      "documentWidth": 768,
+      "violations": [],
+      "passes": 24,
+      "incomplete": 2
+    },
+    {
+      "label": "FINAL 1280px start",
+      "width": 1280,
+      "documentWidth": 1280,
+      "violations": [],
+      "passes": 21,
+      "incomplete": 2
+    },
+    {
+      "label": "FINAL 1280px menu",
+      "width": 1280,
+      "documentWidth": 1280,
+      "violations": [],
+      "passes": 24,
+      "incomplete": 2
+    },
+    {
+      "label": "FINAL 768px menu",
+      "width": 768,
+      "documentWidth": 768,
+      "violations": [],
+      "passes": 24,
+      "incomplete": 2
+    },
+    {
+      "label": "FINAL 390px menu",
+      "width": 390,
+      "documentWidth": 390,
+      "violations": [],
+      "passes": 24,
+      "incomplete": 2
+    },
+    {
+      "label": "FINAL 1280px contextual offer",
+      "width": 1280,
+      "documentWidth": 1280,
+      "violations": [],
+      "passes": 26,
+      "incomplete": 2
+    },
+    {
+      "label": "FINAL 1280px manual guide after refusal",
+      "width": 1280,
+      "documentWidth": 1280,
+      "violations": [],
+      "passes": 26,
+      "incomplete": 2
+    },
+    {
+      "label": "FINAL 1280px dashboard synthetic",
+      "width": 1280,
+      "documentWidth": 1280,
+      "violations": [],
+      "passes": 25,
+      "incomplete": 1
+    },
+    {
+      "label": "FINAL 1280px business base",
+      "width": 1280,
+      "documentWidth": 1280,
+      "violations": [],
+      "passes": 20,
+      "incomplete": 2
+    },
+    {
+      "label": "FINAL 1280px business negative",
+      "width": 1280,
+      "documentWidth": 1280,
+      "violations": [],
+      "passes": 20,
+      "incomplete": 2
+    },
+    {
+      "label": "FINAL 1280px project about",
+      "width": 1280,
+      "documentWidth": 1280,
+      "violations": [],
+      "passes": 18,
+      "incomplete": 1
+    },
+    {
+      "label": "FINAL 390px project about",
+      "width": 390,
+      "documentWidth": 390,
+      "violations": [],
+      "passes": 18,
+      "incomplete": 1
+    },
+    {
+      "label": "FINAL 768px B manual guide enlarged",
+      "width": 768,
+      "documentWidth": 768,
+      "violations": [],
+      "passes": 24,
+      "incomplete": 2
+    }
+  ]
+}
